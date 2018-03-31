@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- The Site Main Title and Tagline -->
+  <title>Fortnite Versus | get to know your frieds and enemies 😎💪🕹</title>
+
+  <!-- jQuery from Google APIs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Cool Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <!-- Bulma Version 0.6.2-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+</head>
+
+<body>
+
+<section class="hero is-info is-fullheight" id="main">
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="column is-6 is-offset-3">
+          <h1 class="title">
+            Fornite Versus !!!
+          </h1>
+          <h2 class="subtitle">
+             compare Fortnite stats & progress and check out how well you are doing compared to your friends.
+          </h2>
+
+          <div class="box">
+            <form method="POST" action="/" >
+              <div class="field is-grouped">
+
+                <p class="control is-expanded">
+                  <input class="input" name="playerName" type="text" placeholder="Player ID goes here    😎🕹🚀 ">
+                </p>
+
+                <p class="control">
+                  <button class="button is-info">
+                    get your stats
+                  </button>
+                </p>
+              </div>
+
+              <br>
+              <div class="control has-text-centered">
+                <label class="radio">
+                  <input type="radio" name="platform" value="psp" checked>
+                  PlayStation
+                </label>
+                <label class="radio">
+                  <input type="radio" name="platform" value="pc" >
+                  PC
+                </label>
+                <label class="radio">
+                  <input type="radio" name="platform" value="xbl" >
+                  XBOX
+                </label>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+<!-- Flash Messages -->
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+
+  <section class="hero-body">
+
+    <div class="container" id="flashMessages">
+      <div class="columns">
+        <div class="column">
+
+            {% for message in messages %}
+
+              <div class="notification is-info">
+                <button class="delete"></button>
+                  {{ message }}
+              </div>
+
+            {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+{% endwith %}
+
+
+<!-- User Info -->
+{% if players %}
+  <section class="hero-body">
+
+    <div class="container" id="players">
+      <div class="tile is-ancestor">
+
+        {% for player in players %}
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <p class="title">{{ player.name }}</p>
+              <p class="subtitle">{{ player.platform }}</p>
+              <p>wins: {{ player.stats['Wins'] }}</p>
+              <p>score: {{ player.stats['Score'] }}</p>
+              <p>matches played: {{ player.stats['Matches Played'] }}</p>
+              <p>kills: {{ player.stats['Kills'] }}</p>
+              <p>time played: {{ player.stats['Time Played'] }}</p>
+              <p>avg survival time: {{ player.stats['Avg Survival Time'] }}</p>
+            </article>
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+
+  <section class="her-body">
+    <div class="container">
+      <div class="is-ancestor">
+        <div class="is-parent has-text-centered ">
+          <a href= {{ url_for('clear') }} class="is-child">reset</a>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endif %}
+
+  <script async type="text/javascript" src="/static/js/bulma.js"></script>
+</body>
+</html>
