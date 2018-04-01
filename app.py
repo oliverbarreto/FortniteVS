@@ -89,6 +89,7 @@ def index():
 
     ## Check session data, and build players array if any, empty array if not
     players = playersInSession()
+    session.clear()
 
     name = request.form.get('playerName')
     platform = request.form.get('platform')
@@ -97,6 +98,7 @@ def index():
     if not name or name == "":
       flash("Please enter a valid player name 😎")
       return render_template('index.html', players=players)
+
 
     ## Check if player is already in the session, and if not, add current player to actual player list before passing
     playersNames = namesOfPlayersInArray(playersInSession())
