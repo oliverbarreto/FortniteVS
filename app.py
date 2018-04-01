@@ -89,7 +89,7 @@ def index():
 
     ## Check session data, and build players array if any, empty array if not
     players = playersInSession()
-    session.clear()
+
 
     name = request.form.get('playerName')
     platform = request.form.get('platform')
