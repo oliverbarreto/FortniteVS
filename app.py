@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from flask import Flask, render_template, url_for, redirect, request, session, flash
 import requests
 import os
@@ -43,6 +45,63 @@ class PlayerStats():
 '''
 
 ## Custom Methods
+def generateVS(players):
+
+  vs = {}
+  keys = ['Kills', 'Score', 'Wins']
+
+  for i, player in enumerate(players):
+    player_stats = statsForPlayerSessionData(player)
+    player_name = player['name']
+
+    player_keys = list(player.keys())
+    stats_keys = list(player_stats.keys())
+
+    ## if vs doesn't exist: create the structure with this players data (first player)
+    if vs == {}:
+      ## print('** Creating new VS dict')
+      for key in keys:
+        value = dict()
+        value['name'] = player_name
+        value['value'] = player_stats[key]
+        vs[key] = value
+      ## print('VS -> {}'.format(vs))
+
+    ## if vs exists: compare current data with current player
+    else:
+      ## print('** Updating VS dict')
+      for key in keys:
+
+        player_value = int(player_stats[key].replace(',' , ''))
+        vs_value = int(vs[key]['value'].replace(',' , ''))
+
+        if player_value > vs_value:
+          value = dict()
+          value['name'] = player_name
+          value['value'] = str(player_value)
+          vs[key] = value
+
+        elif  player_value == vs_value:
+          new_name = '{} & {}'.format(vs[key]['name'], player_name)
+          value = dict()
+          value['name'] = new_name
+          value['value'] = str(player_value)
+          vs[key] = value
+
+      ## print('VS -> {}'.format(vs))
+  return vs
+
+def statsForPlayerSessionData(player):
+  ''' Returns a dictionary winth the stats for a player extracted from a session player object
+  '''
+  stats_dict = {}
+
+  if 'stats' in player:
+    stats_dict = player['stats']
+
+  return stats_dict
+
+
 def statsForPlayer(player_data):
   ''' Returns a dictionary with the stats for a player
   '''
@@ -79,6 +138,7 @@ def playersInSession():
     return []
 
 
+
 ## Routes & Views
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -87,17 +147,25 @@ def index():
 
   if request.method == 'POST':
 
+
     ## Check session data, and build players array if any, empty array if not
     players = playersInSession()
-
 
     name = request.form.get('playerName')
     platform = request.form.get('platform')
 
+
     ## Check valid names
     if not name or name == "":
       flash("Please enter a valid player name 😎")
-      return render_template('index.html', players=players)
+      vs = {}
+      if len(players) > 0:
+        session['players'] = players
+
+      if len(players) > 1:
+        vs = generateVS(players)
+
+      return render_template('index.html', players=players, vs=vs)
 
 
     ## Check if player is already in the session, and if not, add current player to actual player list before passing
@@ -115,7 +183,15 @@ def index():
       if response_json:
         if response_json == {'error': 'Player Not Found'}:
           flash("Player Not Found 😳")
-          return render_template('index.html', players=players)
+
+          vs = {}
+          if len(players) > 0:
+            session['players'] = players
+
+          if len(players) > 1:
+            vs = generateVS(players)
+
+          return render_template('index.html', players=players, vs=vs)
 
         lifeTimeStatsDataForPlayer = response_json['lifeTimeStats']
 
@@ -134,10 +210,18 @@ def index():
 
 
   ## Check if any players to pass, then pass them
+  vs = {}
   if len(players) > 0:
     session['players'] = players
 
-  return render_template('index.html', players=players)
+  if len(players) > 1:
+    ## print('calculating VS Stats')
+    ## print(players)
+    vs = generateVS(players)
+
+
+
+  return render_template('index.html', players=players, vs=vs)
 
 
 

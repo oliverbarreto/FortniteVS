@@ -15,6 +15,7 @@
 /* TODO: and scrolls back the page to the top when flash message has been dismissed */
 $(document).on('click', '.notification > button.delete', function() {
     $(this).parent().addClass('is-hidden');
+    $('#flashMessages').remove();
     return false;
 });
 

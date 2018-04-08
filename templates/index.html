@@ -105,6 +105,40 @@
 
 
 <!-- User Info -->
+{% if vs %}
+  <section class="hero-body">
+
+    <div class="container" id="vs">
+      <div class="tile is-ancestor">
+
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <p class="title">Score: {{ vs['Score']['name'] }}</p>
+
+              <p class="subtitle">{{ vs['Score']['value'] }}</p>
+              <br>
+
+              <p class="title"> Wins: {{ vs['Wins']['name'] }}</p>
+
+              <p class="subtitle">{{ vs['Wins']['value'] }}</p>
+              <br>
+
+              <p class="title">Kills: {{ vs['Kills']['name'] }}</p>
+
+              <p class="subtitle">{{ vs['Kills']['value'] }}</p>
+              <br>
+
+            </article>
+          </div>
+
+
+      </div>
+    </div>
+  </section>
+
+{% endif %}
+
+<!-- User Info -->
 {% if players %}
   <section class="hero-body">
 
