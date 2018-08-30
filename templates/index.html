@@ -192,5 +192,12 @@
 
   gtag('config', 'UA-116732701-1');
 </script>
+<script>
+  var images = ['bg1.jpg', 'bg2.jpg','bg3.jpg','bg4.png','bg5.jpg','bg6.jpg','bg7.jpg','bg8.jpg','bg9.jpg','bg10.png','bg11.png'];
+  var randomImage = 'url(/static/img/' + images[Math.floor(Math.random() * images.length)] + ')'
+  console.log(randomImage)
+  $('.hero.is-info').css({'background-image': randomImage});
+
+</script>
 
 </html>
