@@ -14,7 +14,7 @@ URL = 'https://api.fortnitetracker.com/v1/profile/{}/{}'
 headers = {'TRN-Api-Key' : '31b3b777-f324-4650-8719-69652a8fa491'}
 
 ## Defautl Settings
-keysForMainStats = ['Score', 'Matches Played','Wins', 'Kills', 'Time Played', 'Avg Survival Time']
+keysForMainStats = ['Score', 'Matches Played','Wins', 'Kills']
 platforms = ['psn', 'xbl', 'pc']
 
 
