@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- The Site Main Title and Tagline -->
+  <title>Contact Us! | Fortnite Versus - get to know your friends and enemies 😎💪🕹</title>
+
+  <!-- jQuery from Google APIs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- child block -->
+      {% block content %}{% endblock %} 
+      
+      <!-- errors block -->
+      {% if error %}
+        <p class="error"><strong>Error: </strong>{{ error }}</p>
+        <br>
+      {% endif %} 
+
+      <!-- flash messages block -->
+      {% for message in get_flashed_messages() %}
+        {{ message }}
+      {% endfor %} 
+
+
+
+    </div>
+
+  </body>
+</html>
