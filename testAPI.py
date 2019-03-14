@@ -19,6 +19,6 @@ name = 'MBA_53'
 URL = 'https://api.fortnitetracker.com/v1/store'
 URL2 = 'https://api.fortnitetracker.com/v1/challenges'
 URL3 = 'https://fortniteinsider.com/category/fortnite-news/'
-response = requests.get(URL3 )
+response = requests.get(URL, headers=headers)
 print(response.text)
 #response_json = response.json()

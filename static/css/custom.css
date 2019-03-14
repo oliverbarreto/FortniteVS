@@ -1,6 +1,12 @@
-html,body {
+html, body {
   font-family: 'Open Sans', serif;
+  background-color: black;
 }
+
+body, wrapper {
+  min-height: 100vh;
+}
+
 .hero.is-info {
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -11,6 +17,7 @@ html,body {
   -o-background-size: cover;
   background-size: cover;
 }
+
 .hero .subtitle {
   padding: 3rem 0;
   line-height: 1.5;
@@ -18,4 +25,8 @@ html,body {
 .hero .nav, .hero.is-success .nav {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.vBucks-price-icon {
+  height: 18px;
 }

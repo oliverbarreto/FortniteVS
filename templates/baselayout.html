@@ -6,32 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- The Site Main Title and Tagline -->
-  <title>Contact Us! | Fortnite Versus - get to know your friends and enemies 😎💪🕹</title>
+    <title>Contact Us! | Fortnite Versus - get to know your friends and enemies 😎💪🕹</title>
 
-  <!-- jQuery from Google APIs -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Imports: JS & CSS -->
+    {% include 'includes/_imports.html' %}
+
+    <!-- Google AdSense Block -->
+    {% include 'includes/_googleadsense.html' %}
 
   </head>
-  <body>
-    <div class="container">
-
-      <!-- child block -->
-      {% block content %}{% endblock %} 
+  
+  <body class="d-flex flex-column h-100">
+      <header>
+        <!-- Navbar Container Block -->
+        {% include 'includes/_navbar.html' %}
+      </header>
       
-      <!-- errors block -->
-      {% if error %}
-        <p class="error"><strong>Error: </strong>{{ error }}</p>
-        <br>
-      {% endif %} 
+      <!-- Main Bootstrap Container -->
+      <main role="main" class="flex-shrink-0">
+        <div class="container">
 
-      <!-- flash messages block -->
-      {% for message in get_flashed_messages() %}
-        {{ message }}
-      {% endfor %} 
+          <!-- child block -->
+          {% block content %}{% endblock %} 
+          
+          <!-- errors block -->
+          {% if error %}
+            <p class="error"><strong>Error: </strong>{{ error }}</p>
+            <br>
+          {% endif %} 
 
+          <!-- flash messages block -->
+          {% for message in get_flashed_messages() %}
+            {{ message }}
+          {% endfor %} 
 
+        </div>
+      </main>
+      
+      <!-- Footer Container Block -->
+      <footer class="footer mt-auto py-3 bg-dark text-light">
 
-    </div>
+      <!-- <footer class="footer fixed-bottom"  -->
+
+          <!-- child block -->
+          {% include 'includes/_footer.html' %}
+      </footer>
+
+    <script src="/static/js/bootstrap.min.js"></script>
 
   </body>
+  
+  <!-- Google Analytics Code Block -->
+  {% include 'includes/_googleanalytics.html' %}
+
+
 </html>
