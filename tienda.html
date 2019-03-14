@@ -1,0 +1,20 @@
+{% extends 'baselayout.html' %}
+
+{% block content %}
+  
+  <h1 class='display'>No te pierdas la tienda de hoy!</h1>
+  <br>
+
+  <ul>
+  {% for item in items %} 
+  		<li class="list-group-item">{{ item.manifestId }}</li>
+  		<li class="list-group-item">{{ item.name }}</li>
+  		<li class="list-group-item">{{ item.rarity }}</li>
+      <li class="list-group-item">{{ item.vBucks }}</li>
+  		<li><img src="{{ item.imageUrl}}" alt="image"></li>
+
+  {% endfor%}
+  </ul>
+  
+
+{% endblock %}

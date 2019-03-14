@@ -1,0 +1,28 @@
+{% extends 'baselayout.html' %}
+
+{% block content %}
+  
+  <h1 class='display'>No te pierdas la tienda de hoy!</h1>
+  <br>
+
+  <ul>
+  {% for item in items %} 
+  	<div class="card my-3 text-center" style="width: 18rem;">
+      <img src="{{ item.imageUrl }}" class="card-img" alt="fortnite image">
+      <div class="card-body">
+        <h2 class="card-title">{{ item.name }}</h5>
+        <p class="card-text">{{ item.rarity }}</p>      
+        <p class="card-text">{{ item.vBucks }}</p>      
+        <ul class="list-inline">
+          <li class="list-inline-item"><img src="https://cdn.thetrackernetwork.com/cdn/trackernetwork/3C7Avbucks.png" class="vBucks-price-icon"></li>
+          <li class="list-inline-item"></li>
+        </ul>
+        
+      </div>
+    </div>    
+
+  {% endfor%}
+  </ul>
+  
+
+{% endblock %}
