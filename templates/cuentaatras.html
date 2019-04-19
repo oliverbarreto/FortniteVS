@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- The Site Main Title and Tagline -->
+    <title>Cuenta Atrás! | Fortnite Versus - get to know your friends and enemies 😎💪🕹</title>
+
+    <!-- Imports: JS & CSS -->
+    {% include 'includes/_imports.html' %}
+
+    <!-- Google AdSense Block -->
+    {% include 'includes/_googleadsense.html' %}
+
+  </head>
+  
+  <body class="d-flex flex-column h-100">
+      <header>
+        <!-- Navbar Container Block -->
+        {% include 'includes/_navbar.html' %}
+      </header>
+      
+      <!-- Main Bootstrap Container -->
+      <div class="section-countdown text-center">
+        <h1 class='header-title text-center my-5'>Cuenta atrás para los retos de la semana 7 de Fortnite !</h1>
+        <h3>no puedo esperar hasta el próximo evento...</h3>
+
+        <div class="row">
+          <div class="col">
+            <h1 id="fortnite-timer" class="header-luckylanding text-center my-5"></h1>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Footer Container Block -->
+      <footer class="footer mt-auto py-3 bg-dark text-light">
+
+      <!-- <footer class="footer fixed-bottom"  -->
+
+          <!-- child block -->
+          {% include 'includes/_footer.html' %}
+      </footer>
+
+    <script src="/static/js/bootstrap.min.js"></script>
+
+  </body>
+  
+  <!-- Google Analytics Code Block -->
+  {% include 'includes/_googleanalytics.html' %}
+
+
+  
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Apr 11, 2019 10:00:00").getTime();
+
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("fortnite-timer").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("fortnite-timer").innerHTML = "A Pasarlo Bien !!!";
+  }
+}, 1000);
+</script>    
+
+
+
+</html>

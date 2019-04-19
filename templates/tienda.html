@@ -1,28 +1,109 @@
 {% extends 'baselayout.html' %}
+{% set active_page = "tienda" %}
 
 {% block content %}
-  
-  <h1 class='display'>No te pierdas la tienda de hoy!</h1>
-  <br>
 
-  <ul>
-  {% for item in items %} 
-  	<div class="card my-3 text-center" style="width: 18rem;">
-      <img src="{{ item.imageUrl }}" class="card-img" alt="fortnite image">
-      <div class="card-body">
-        <h2 class="card-title">{{ item.name }}</h5>
-        <p class="card-text">{{ item.rarity }}</p>      
-        <p class="card-text">{{ item.vBucks }}</p>      
-        <ul class="list-inline">
-          <li class="list-inline-item"><img src="https://cdn.thetrackernetwork.com/cdn/trackernetwork/3C7Avbucks.png" class="vBucks-price-icon"></li>
-          <li class="list-inline-item"></li>
-        </ul>
+  
+<!-- 
+  return render_template('tienda.html', daily_items=dailyItems(), weekily_items=weeklyItems())
+-->
+
+<div class="section-tienda  mb-5">
+
+  <div class="row">
+
+    <!-- Featured Items Shop -->
+    <div class="col-12 col-lg-6 mt-5 mt-md-0">
+
+      <div class="col-12 text-center section-tienda-header mt-5">
+         <!--
+        <h1 class="header-tienda">Daily Items ({{ daily_items|length }})</h1>  
+        -->
+        <h1 class="header-tienda">Featured Items</h1>  
+      </div>
+
+      <div class="flex-row">
+
+          {% for items_row in weekly_items | batch(2,'&nbsp;')%} 
+          <div class="col-12 d-flex justify-content-center align-items-stretch text-center py-1">
+
+            {% for item in items_row %}
+              <div class="card card-tienda-hoy-featured-item mx-2 my-2 text-center" style="width: 15rem;
+              {% if item.rarity == 'Sturdy' %} background: radial-gradient(ellipse at center 55%, #49acf2,#143977);border: 2px solid #37d1ff;
+              {% elif item.rarity == 'Fine' %} background: radial-gradient(ellipse at center 55%, #e38347,#78371d);border: 2px solid #e98d4b;
+              {% elif item.rarity == 'Handmade' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117);border: 2px solid #87e339;
+              {% elif item.rarity == 'Quality' %} background: radial-gradient(ellipse at center 55%, #b15be2,#4b2483);border: 2px solid #e95eff;
+              {% elif item.rarity == 'Uncommon' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117); border: 2px solid #87e339;
+              {% endif %}">
+                <img src="{{ item.imageUrl }}" class="card-img" alt="fortnite image">
+                <div class="card-body card-tienda-hoy-body">
+                  <!-- <p class="card-title"><strong>{{ item.name }}</strong></p>  -->
+                  <p class="card-title card-tienda-hoy-text"><strong>{{ item.name }}</strong></p>    
+                  
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><img src="https://cdn.thetrackernetwork.com/cdn/trackernetwork/3C7Avbucks.png" class="vBucks-price-icon"></li>
+                    <li class="list-inline-item card-tienda-hoy-text"><strong>{{ item.vBucks }}</strong></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            {% endfor %}         
+
+          </div>
+          {% endfor %} 
         
       </div>
-    </div>    
 
-  {% endfor%}
-  </ul>
-  
+    </div>
+
+
+
+    <!-- Daily Items Shop -->
+    <div class="col-12 col-lg-6 mt-5 mt-md-0">
+
+      <div class="col-12 text-center section-tienda-header mt-5">
+         <!--
+        <h1 class="header-tienda">Daily Items ({{ daily_items|length }})</h1>  
+        -->
+        <h1 class="header-tienda">Daily Items</h1>  
+      </div>
+
+      <div class="flex-row">
+
+          {% for items_row in daily_items | batch(2,'&nbsp;')%} 
+          <div class="col-12 d-flex justify-content-center align-items-stretch text-center py-1">
+
+            {% for item in items_row %}
+              <div class="card card-tienda-hoy-daily-item mx-2 my-2 text-center" style="width: 15rem;
+              {% if item.rarity == 'Sturdy' %} background: radial-gradient(ellipse at center 55%, #49acf2,#143977);border: 2px solid #37d1ff;
+              {% elif item.rarity == 'Fine' %} background: radial-gradient(ellipse at center 55%, #e38347,#78371d);border: 2px solid #e98d4b;
+              {% elif item.rarity == 'Handmade' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117);border: 2px solid #87e339;
+              {% elif item.rarity == 'Quality' %} background: radial-gradient(ellipse at center 55%, #b15be2,#4b2483);border: 2px solid #e95eff;
+              {% elif item.rarity == 'Uncommon' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117); border: 2px solid #87e339;
+              {% endif %}">
+                <img src="{{ item.imageUrl }}" class="card-img" alt="fortnite image">
+                <div class="card-body card-tienda-hoy-body">
+                  <!-- <p class="card-title"><strong>{{ item.name }}</strong></p>  -->
+                  <p class="card-title card-tienda-hoy-text"><strong>{{ item.name }}</strong></p>    
+                  
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><img src="https://cdn.thetrackernetwork.com/cdn/trackernetwork/3C7Avbucks.png" class="vBucks-price-icon"></li>
+                    <li class="list-inline-item card-tienda-hoy-text"><strong>{{ item.vBucks }}</strong></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            {% endfor %}         
+
+          </div>
+          {% endfor %} 
+        
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
 
 {% endblock %}

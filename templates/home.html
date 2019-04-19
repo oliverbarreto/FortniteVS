@@ -1,11 +1,121 @@
 {% extends 'baselayout.html' %}
+{% set active_page = "home" %}
+
 
 {% block content %}
-  
-  <h1 class='display'>Fortnite Versus - get to know your friends and enemies 😎💪🕹!</h1>
-  <br>
-  <p>Somos un proyecto educativo que pretende enseñar y crear jóvenes emprendedores mediante la práctica real de crear una startup.</p>
-  <p>Puedes contactar con nosotros directamente en <a href="mailto:fortniteVSinfo@gmail.com">fortniteVSinfo@gmail.com</a></p>
+
+  <div class="row justify-content-center text-center section-buscador mb-5">
+    
+      <div class="col-8">
+        <h1 class="header-buscador mt-5">Fortnite Versus</h1>
+        <p class="lead my-5">
+          busca tus kills y tus wins y no te pierdas como evolucionan tus amigos y tus enemigos  😎💪🕹 !
+        </p>
+      </div>
+
+      <div class="col-10 col-md-5 buscador-form-box mt-2 mb-5 py-3">
+
+        <form method="POST" action="/" _lpchecked="1">
+          
+          <div class="btn-group" role="group" aria-label="Buscador FortniteVS">
+             <input class="input" name="playerName" type="text" placeholder="por tu EPIC ID aquí 🕹 ">                 
+             <button class="button is-info btn-fortnite-yellow">buscar</button>
+          </div>
+
+          <div class="control has-text-centered mt-3">
+            <label class="radio">
+              <input type="radio" name="platform" value="psp" checked="">
+              PlayStation
+            </label>
+            <label class="radio">
+              <input type="radio" name="platform" value="pc">
+              PC
+            </label>
+            <label class="radio">
+              <input type="radio" name="platform" value="xbl">
+              XBOX
+            </label>
+          </div>
+        </form>
+
+      </div>
+    
+    
+  </div>
+
+  <div class="row justify-content-center">
+
+    <div class="col-12 col-md-7 mt-5 mt-md-0 px-5">
+      <div class="col-12 text-center section-tienda-header">
+        <h1 class="header-tienda">Noticias</h1>  
+      </div>
+      
+      {% for articulo in articulos[0:3] %}
+      <div class="card card-noticias my-5">
+
+          <a href="{{ articulo.source_link }}"><img src="{{ articulo.image}}" class="card-img" alt="fortnite image"></a>
+
+          <div class="card-body card-body-noticias">
+            <h5 class="card-title card-title-noticias">{{ articulo.title }}</h5>
+            <p class="card-text card-text-noticias text-muted">{{ articulo.body }}</p>
+
+            <ul class="list-inline">
+              <li class="list-inline-item"><small class="text-muted">{{ articulo.author }}</small></li>
+              <li class="list-inline-item"><small class="text-muted">{{ articulo.create_date }}</small></li>
+            </ul>
+            <a href="{{ articulo.source_link }}" class="btn card-noticias-leermas_btn ">leer más</a>
+          </div>
+          
+      </div>
+      {% endfor %}
+
+      <div class="col-12 text-center section-tienda-header">
+        <a class="btn btn-fortnite-yellow my-1 my-md-5" href="/noticias" role="button">leer más ...</a> 
+      </div>
+
+    </div>
+
+    <div class="col-12 col-lg-5 mt-5 mt-md-0">
+
+      <div class="col-12 text-center section-tienda-header">
+        <h1 class="header-tienda">Objetos Destacados</h1>  
+      </div>
+
+      <div class="flex-row">
+
+          {% for items_row in daily_items | batch(2,'&nbsp;')%} 
+          <div class="col-12 d-flex justify-content-center align-items-stretch text-center py-1">
+
+            {% for item in items_row %}
+              <div class="card card-tienda-hoy-featured-miniitem mx-2 my-1 text-center" style="{% if item.rarity == 'Sturdy' %} background: radial-gradient(ellipse at center 55%, #49acf2,#143977);border: 2px solid #37d1ff;
+              {% elif item.rarity == 'Fine' %} background: radial-gradient(ellipse at center 55%, #e38347,#78371d);border: 2px solid #e98d4b;
+              {% elif item.rarity == 'Handmade' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117);border: 2px solid #87e339;
+              {% elif item.rarity == 'Quality' %} background: radial-gradient(ellipse at center 55%, #b15be2,#4b2483);border: 2px solid #e95eff;
+              {% elif item.rarity == 'Uncommon' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117); border: 2px solid #87e339;
+              {% endif %}">
+                <a href="/tienda">
+                  <img src="{{ item.imageUrl }}" class="card-img" alt="fortnite image">
+                  <div class="card-body card-tienda-hoy-body">
+                    <!-- <p class="card-title"><strong>{{ item.name }}</strong></p>  -->
+                    <p class="card-title card-tienda-hoy-text"><strong>{{ item.name }}</strong></p>    
+                    
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><img src="https://cdn.thetrackernetwork.com/cdn/trackernetwork/3C7Avbucks.png" class="vBucks-price-icon"></li>
+                      <li class="list-inline-item card-tienda-hoy-text"><strong>{{ item.vBucks }}</strong></li>
+                    </ul>
+                  </div> 
+                </a>
+              </div>
+            {% endfor %}         
+
+          </div>
+          {% endfor %} 
+        
+      </div>
+
+    </div>
+
+  </div>
   
 
 {% endblock %}

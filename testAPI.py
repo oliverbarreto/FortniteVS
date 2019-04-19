@@ -16,9 +16,10 @@ name = 'MBA_53'
 
 ## Build stats_dict
 #response = requests.get(URL.format(platforms[0], name.strip()), headers=headers)
-URL = 'https://api.fortnitetracker.com/v1/store'
-URL2 = 'https://api.fortnitetracker.com/v1/challenges'
-URL3 = 'https://fortniteinsider.com/category/fortnite-news/'
-response = requests.get(URL, headers=headers)
+URL1 = URL.format(platforms[0], name.strip())
+URL2 = 'https://api.fortnitetracker.com/v1/store'
+URL3 = 'https://api.fortnitetracker.com/v1/challenges'
+URL4 = 'https://fortniteinsider.com/category/fortnite-news/'
+response = requests.get(URL1, headers=headers)
 print(response.text)
 #response_json = response.json()

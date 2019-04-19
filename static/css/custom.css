@@ -1,6 +1,21 @@
+/* 
+  #fe5615: Naranja 
+  #f0ed63: Amarillo Fortnite
+  #28c5fa: Azul Claro Fortnite 
+  #5792fd: Azul 
+  #004aa2: Azulón 
+  #19b8b2: Turquesa
+  #37319d: Violeta 
+  #472D9C: Violeta FORTNITE
+  #61ff45: Verde Fosforito Fortnite
+  #238b12: Verde
+*/
+
+/* -------------------------------------------------------- */ 
+/* Main */ 
+/* -------------------------------------------------------- */ 
 html, body {
   font-family: 'Open Sans', serif;
-  background-color: black;
 }
 
 body, wrapper {
@@ -27,6 +42,434 @@ body, wrapper {
   box-shadow: none;
 }
 
+
+
+
+/* NEW WEB --- app2.py */
+
+/* -------------------------------------------------------- */ 
+/* CUSTOM NavBar */
+/* -------------------------------------------------------- */ 
+.navbar-custom {
+  background-color: #472D9C;
+}
+
+/* -------------------------------------------------------- */ 
+/* change the brand and text color */
+/* -------------------------------------------------------- */ 
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #fff;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #fff;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #fe5615;
+}
+
+
+/* -------------------------------------------------------- */ 
+/* Main Titles & Headers */
+/* -------------------------------------------------------- */ 
+.header-title, .header-feature, .header-countdown  {
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0.038em;
+  vertical-align: baseline;
+}
+
+
+
+/* -------------------------------------------------------- */ 
+/* Custom CSS */ 
+/* -------------------------------------------------------- */ 
+
+/* -------------------------------------------------------- */ 
+/* Sección Home -  BUSCADOR VS */
+/* -------------------------------------------------------- */ 
+.section-buscador {
+  background-image: url('/static/img/llama.jpg'); 
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-buscador {
+  padding-left: -15px;
+  padding-right: -15px;
+}
+
+.header-buscador {
+  color: #fff;
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.038em;
+}
+
+.header-buscador + p {
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: lowercase;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.buscador-form-box {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.header-VS {
+  color: #111;
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 500;
+  letter-spacing: 0.038em;
+}
+
+.section-players-stats-card {
+  border-color: #472D9C;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.section-versus-stats {
+
+}
+
+.section-players-stats {
+  color: #111;
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.038em;
+  vertical-align: baseline;
+
+}
+
+.section-players-stats-name {
+  color: #472D9C;  
+  font-size: 2rem;
+  font-weight: 100;
+  vertical-align: baseline;
+
+}
+
+.section-players-stats-platform {
+  font-size: 2rem;
+  font-weight: 100; 
+  vertical-align: baseline;
+
+}
+
+.section-players-stats-label {
+  color: #472D9C;
+  font-size: 1rem;
+  font-weight: 100;  
+  margin-top: 0px;
+  margin-bottom: 0px;
+  vertical-align: baseline;
+}
+
+.section-players-stats-value {
+  font-size: 1.6rem;
+  font-weight: 100;  
+  margin-top: 5px;
+  vertical-align: baseline;
+}
+
+
+
+
+/* -------------------------------------------------------- */ 
+/* Sección Noticias */
+/* -------------------------------------------------------- */ 
+.section-noticias {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.header-noticias {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color: #111;
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.038em;
+  vertical-align: baseline;
+}
+
+.card-title-noticias{
+  font-size: 1.5rem;
+}
+
+.card-noticias {
+  width: 100%;
+}
+
+.card-noticias > img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-text-fecha {
+  font-size: 0.8rem;
+  color: #28c5fa;
+}
+
+.card-text-autor {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #28c5fa;
+}
+
+.card-noticias-leermas_btn {
+  background-color:  #28c5fa;
+  color: #fff;
+  border-color: none;
+}
+
+
+.card-noticias-leermas_btn:hover {
+  background-color:  #004aa2;
+  color: #fff;
+  border-color: none;
+}
+
+.card-noticias:hover {
+    -webkit-transform: scale3d(1.03,1.03,1);
+    transform: scale3d(1.03,1.03,1);
+    transition: transform .2s; /* Animation */
+}
+
+.btn-fortnite-yellow { /* Yellow Fortnite Custom Button */
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #f0ed63;
+  color: black;
+  box-shadow: 3px 3px 6px black;
+  padding: 10px;
+  border: none;
+  transition: 500ms background-color ease-in, 500ms color ease-in;
+  max-width:50%;
+}
+
+.btn-fortnite-yellow:hover {
+    -webkit-transform: scale3d(1.05,1.05,1);
+    transform: scale3d(1.05,1.05,1);
+    transition: transform .1s; /* Animation */
+}
+
+/* -------------------------------------------------------- */ 
+/* Sección Tienda */
+/* -------------------------------------------------------- */ 
+.section-tienda-hoy, .section-tienda-semana {
+  background-color: #fff;
+}
+
+.header-tienda {
+  margin: 0;
+  padding: 25px;
+  color: #111;
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  vertical-align: baseline;
+}
+
 .vBucks-price-icon {
   height: 18px;
+}
+
+.card-tienda-hoy-text {
+  color: #fff;
+  font-size: 12px;
+}
+
+.card-tienda-hoy-body {
+  background-color: #111;
+  opacity: 0.75;
+  padding: 10px 0px 5px 0px;
+}
+
+
+.card-tienda-hoy-featured-item:hover, .card-tienda-hoy-daily-item:hover, .card-tienda-hoy-featured-miniitem:hover {
+    -webkit-transform: scale3d(1.05,1.05,1);
+    transform: scale3d(1.05,1.05,1);
+    transition: transform .2s; /* Animation */
+}
+
+.card-tienda-hoy-featured-miniitem {
+    min-width: 75px;
+    min-height: 75px;
+    width: 50%
+    height: 50%;
+    margin: 0px 10px 0px 10px;
+}
+
+/* -------------------------------------------------------- */ 
+/* Rarity Bacground Effects */
+/* -------------------------------------------------------- */ 
+.rarity-Sturdy {
+  background: radial-gradient(ellipse at center 55%, #49acf2, #143977);
+  border: 2px solid #37d1ff;
+}
+.rarity-Fine {
+  background: radial-gradient(ellipse at center 55%, #e38347,#78371d);
+  border: 2px solid #e98d4b;
+}
+.rarity-Handmade {
+  background: radial-gradient(ellipse at center 55%, #60aa3a,#175117);
+  border: 2px solid #87e339;
+}
+.rarity-Quality {
+  background: radial-gradient(ellipse at center 55%, #b15be2,#4b2483);
+  border: 2px solid #e95eff;
+}
+.rarity-Uncommon {
+  background: radial-gradient(ellipse at center 55%, #60aa3a,#175117); 
+  border: 2px solid #87e339;
+}
+
+
+/* -------------------------------------------------------- */ 
+/* Voy a tener suerte section - Donde Aterrizamos */
+/* -------------------------------------------------------- */ 
+.section-dondeaterrizamos {
+  background-image: url('/static/img/luckylanding.png'); 
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 56px)
+}
+
+.header-luckylanding {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #111;
+  opacity: 0.75;
+  
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.038em;
+  vertical-align: baseline;
+}
+
+#random_location { /* Yellow Fortnite Custom Button */
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #f0ed63;
+  color: black;
+  box-shadow: 3px 3px 6px black;
+  padding: 30px;
+  border: none;
+  transition: 500ms background-color ease-in, 500ms color ease-in;
+  max-width:50%;
+}
+
+#random_location:hover {
+  background-color: #C2BF50;
+}
+
+.full-cover-bg {
+  background-color: #111;
+  opacity: 0.9;
+}
+
+#luckylanding-random-text {
+  font-size: 3rem;
+  color: #fff;
+
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.038em;
+  vertical-align: baseline;
+  line-height: 80%;
+}
+
+
+/* -------------------------------------------------------- */ 
+/* Sección Cuenta Atrás de Evento */
+/* -------------------------------------------------------- */ 
+.section-countdown {
+  background-image: url('/static/img/bg29.jpg'); 
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 56px)
+}
+
+
+/* -------------------------------------------------------- */ 
+/* -------------------------------------------------------- */ 
+/* Media Queries*/
+/* -------------------------------------------------------- */ 
+/* -------------------------------------------------------- */ 
+@media (min-width: 576px) { /* Medium Screens */
+
+  .header-noticias, .header-tienda {
+    font-size: 3rem;
+  }
+
+  .card-tienda-hoy-featured-item, .card-tienda-hoy-daily-item {
+    min-width: 200px;
+    min-height: 200px;
+    width: 50%
+    height: 50%;
+    margin: 0px 10px 0px 10px;
+  }
+
+  .card-tienda-hoy-featured-miniitem {
+    width: 30%;
+    height: 30%;
+    margin: 0px 10px 0px 10px;
+  }
+
+  .card-tienda-hoy-featured-miniitem>p {
+    font-size: 0.75rem;
+  }
+
+  .card-tienda-hoy-text {
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .header-luckylanding-text {
+    font-size: 5rem;
+  }
+
+  #random_location {
+    font-size: 2rem;
+  }
+  #luckylanding-random-text {
+    font-size: 5rem;
+  }
+
+
+  .header-buscador {
+    font-size: 5rem;
+    
+  }
+}
+
+
+@media (min-width: 992px) { /* Large Screens */
+
 }
