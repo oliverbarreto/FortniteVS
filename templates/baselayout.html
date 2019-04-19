@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- The Site Main Title and Tagline -->
+    <title>Fortnite Versus - Conoce las wins y las kills de tus amigos y enemigos 😎💪🕹 !</title>
+
+    <!-- Imports: JS & CSS -->
+    {% include 'includes/_imports.html' %}
+
+    <!-- Google AdSense Block -->
+    {% include 'includes/_googleadsense.html' %}
+
+  </head>
+  
+  <body class="d-flex flex-column h-100">
+      <header>
+        <!-- Navbar Container Block -->
+        {% include 'includes/_navbar.html' %}
+      </header>
+      
+      <!-- Main Bootstrap Container -->
+      <main role="main" class="flex-shrink-0">
+        <div class="container-fluid">
+
+          <!-- child block -->
+          {% block content %}{% endblock %} 
+
+        </div>
+      </main>
+      
+      <!-- Footer Container Block -->
+      <footer class="footer mt-auto py-3 bg-dark text-light">
+
+      <!-- <footer class="footer fixed-bottom"  -->
+
+          <!-- child block -->
+          {% include 'includes/_footer.html' %}
+      </footer>
+
+    <script src="/static/js/bootstrap.min.js"></script>
+  </body>
+  
+  <!-- Google Analytics Code Block -->
+  {% include 'includes/_googleanalytics.html' %}
+
+
+</html>
