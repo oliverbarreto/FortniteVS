@@ -1,3 +1,0 @@
-{'name': 'mba_53', 'platform': 'psp', 'lifetimeStats': [{'key': 'Top 5s', 'value': '39'}, {'key': 'Top 3s', 'value': '67'}, {'key': 'Top 6s', 'value': '177'}, {'key': 'Top 10', 'value': '49'}, {'key': 'Top 12s', 'value': '136'}, {'key': 'Top 25s', 'value': '157'}, {'key': 'Score', 'value': '306,340'}, {'key': 'Matches Played', 'value': '2609'}, {'key': 'Wins', 'value': '15'}, {'key': 'Win%', 'value': '1%'}, {'key': 'Kills', 'value': '568'}, {'key': 'K/d', 'value': '0.22'}]}
-
-{'name': 'mba_53', 'platform': 'psp', 'lifetimeStats': {'Score': '306,340', 'Matches Played': '2609', 'Wins': '15', 'Kills': '568', 'K/d': '0.22'}}

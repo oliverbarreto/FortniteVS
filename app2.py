@@ -61,6 +61,16 @@ def weeklyItems():
       items.append(item)
   return items  
 
+def stringIsEmpty(string):
+  result = 0
+  for char in string:
+    if char == " ":
+      result += 1     # same as result = result + 1
+  if result == len(string):
+    return True
+  else:
+    return False
+
 def statsForPlayer(player_data):
   ''' Returns a dictionary with the stats for a player
   '''
@@ -143,13 +153,13 @@ def index():
     playerPlatform = request.form.get("platform")  
 
     ## Check for valid names: flashes if error, and returns the previous players array 
-    if not playerName or playerName == "":
+    if not playerName or playerName == "" or stringIsEmpty(playerName):
       flash("Por favor introduce un nombre de usuario válido 😎")
 
     else:
       ## If there are more players already in session object
-      print("*********** SESION *************")
-      print(players)
+      ## print("*********** SESION *************")
+      ## print(players)
 
       if playerName not in namesOfPlayersInArray(players):
 
@@ -167,7 +177,7 @@ def index():
           }
 
           players.append(player)
-          print(player)
+          ## print(player)
           session['players']= players
 
 
@@ -175,7 +185,7 @@ def index():
 
   elif request.method == "GET":  
     items = weeklyItems()
-    return render_template('home.html', articulos=Articulos, daily_items=items)
+    return render_template('index.html', articulos=Articulos, daily_items=items)
 
 @app.route('/contacto')
 def contacto():
