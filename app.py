@@ -52,6 +52,7 @@ def dummyStore_Items():
       content_json = json.loads(content)["store_items"]
       #print(content_json)
       f.close()
+      
       return content_json
 
   else:
