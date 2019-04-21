@@ -51,6 +51,7 @@ def dummyStore_Items():
       content = f.read()
       content_json = json.loads(content)["store_items"]
       #print(content_json)
+      f.close()
       return content_json
 
   else:
@@ -217,6 +218,7 @@ def index():
     return render_template('vs.html', playerName=playerName, playerPlatform=playerPlatform, players=players)
 
   elif request.method == "GET":  
+    #Store_items = StoreItems()
     items = weeklyItems()
     return render_template('index.html', articulos=Articulos, daily_items=items)
 
@@ -282,7 +284,7 @@ def updatetienda():
 
   with open (file_path, "w") as f:
     f.write(json.dumps(store_items))
-    #print(store_items)
+    print(store_items)
 
     print("----------------------------------------------------------------------------------------------")
     file_path = "static/data/data_tienda.py"
@@ -333,6 +335,7 @@ def updatetienda():
     
   
   return redirect(url_for('index'))
+
 
 
 
