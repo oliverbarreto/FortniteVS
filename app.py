@@ -346,7 +346,7 @@ def robots():
   ## return("User-agent: *\nDisallow: /register/\nDisallow: /login/\nDisallow: /donation-success/")
 
   ###### DEV VERSION #####
-  return("User-agent: *\nDisallow: /")
+  return("User-agent: *\nDisallow:")
 
 
 @app.route('/sitemap.xml', methods=['GET'])
