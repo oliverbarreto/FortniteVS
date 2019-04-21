@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template, url_for, redirect, request, session, flash
+from flask import Flask, render_template, url_for, redirect, request, session, flash, make_response
 import requests
 import os
 import json
-from datetime import datetime
+from datetime import datetime,timedelta
 
 ##from data import Articles, StoreItems, Challenges
 ## from data_tienda import StoreItems
@@ -340,7 +340,36 @@ def updatetienda():
 
 
 
+@app.route('/robots.txt/')
+def robots():
+  ## LIVE VERSION ####
+  ## return("User-agent: *\nDisallow: /register/\nDisallow: /login/\nDisallow: /donation-success/")
 
+  ###### DEV VERSION #####
+  return("User-agent: *\nDisallow: /")
+
+
+@app.route('/sitemap.xml', methods=['GET'])
+def sitemap():
+    try:
+      """Generate sitemap.xml. Makes a list of urls and date modified."""
+      pages=[]
+      ten_days_ago=(datetime.now() - timedelta(days=7)).date().isoformat()
+      # static pages
+      for rule in app.url_map.iter_rules():
+          if "GET" in rule.methods and len(rule.arguments)==0:
+              pages.append(
+                           ["http://fortnitevs.herokuapp.com"+str(rule.rule),ten_days_ago]
+                           )
+
+      sitemap_xml = render_template('sitemap_template.xml', pages=pages)
+      print(sitemap_xml)
+      response= make_response(sitemap_xml)
+      response.headers["Content-Type"] = "application/xml"    
+    
+      return response
+    except Exception as e:
+        return(str(e))
 ## ----------------------------------------------------------------------------
 ## Main
 ## ----------------------------------------------------------------------------
