@@ -45,13 +45,13 @@
 
   <div class="row justify-content-center">
 
-    <div class="col-12 col-md-7 mt-5 mt-md-0 px-5">
+    <div class="col-12 col-md-7 mt-5 mt-md-0 px-5 justify-content-center">
       <div class="col-12 text-center section-tienda-header">
         <h1 class="header-tienda">Noticias</h1>  
       </div>
       
       {% for articulo in articulos[0:3] %}
-      <div class="card card-noticias my-5">
+      <div class="card card-noticias card-noticias-home my-5">
 
           <a href="{{ articulo.source_link }}"><img src="{{ articulo.image}}" class="card-img" alt="fortnite image"></a>
 

@@ -424,6 +424,10 @@ body, wrapper {
 /* -------------------------------------------------------- */ 
 @media (min-width: 576px) { /* Medium Screens */
 
+  .card-noticias-home {
+    
+  }
+  
   .header-noticias, .header-tienda {
     font-size: 3rem;
   }
@@ -458,14 +462,13 @@ body, wrapper {
   #random_location {
     font-size: 2rem;
   }
+
   #luckylanding-random-text {
     font-size: 5rem;
   }
 
-
   .header-buscador {
-    font-size: 5rem;
-    
+    font-size: 5rem; 
   }
 }
 

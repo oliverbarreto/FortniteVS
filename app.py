@@ -50,7 +50,7 @@ def dummyStore_Items():
     with open (file_path, "r") as f:
       content = f.read()
       content_json = json.loads(content)["store_items"]
-      ## print(content_json)
+      #print(content_json)
       return content_json
 
   else:
@@ -59,10 +59,19 @@ def dummyStore_Items():
 
 def StoreItems():
   store_items = dummyStore_Items()
-
+  
   return store_items
 
+print("----------------------------------------------------------------------------------------------")
+file_path = "static/data/data_tienda.py"
+print(f"Data loaded at STARTUP from {file_path} at {datetime.now()}")
+
 Store_items = StoreItems()
+
+print(Store_items)
+print("----------------------------------------------------------------------------------------------")
+
+
 
 #Retos = Challenges()
 
@@ -251,9 +260,12 @@ def updatetienda():
   response = requests.get(URL, headers=headers)
   response_json = response.json()
   response_text = response.text
-  ##print(response_json)
-  #response_json = response.json()
-
+  print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+  print(f"Data returned from API call at {datetime.now()}")
+  print(response_json)
+  #response_json = response.json()  
+  print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+  
   ## Create JSON Object with current items in the store
   today = datetime.now().strftime("%Y-%m-%d")
   store_items = {
@@ -269,8 +281,28 @@ def updatetienda():
       f.close()
 
   with open (file_path, "w") as f:
-    content = f.write(json.dumps(store_items))
+    f.write(json.dumps(store_items))
+    #print(store_items)
+
+    print("----------------------------------------------------------------------------------------------")
+    file_path = "static/data/data_tienda.py"
+    print(f"Data saved in {file_path} at {datetime.now()}")
+
+    print(json.dumps(store_items))
+    print("----------------------------------------------------------------------------------------------")
+
     f.close()
+
+  print("----------------------------------------------------------------------------------------------")
+  file_path = "static/data/data_tienda.py"
+  print(f"Data loaded after {file_path} has been updated at {datetime.now()}")
+
+  Store_items = StoreItems()
+
+  print(Store_items)
+  print("----------------------------------------------------------------------------------------------")
+
+
 
 
   ## Create backup JSON object from file 
@@ -299,6 +331,7 @@ def updatetienda():
       content = f.write(json.dumps(content_json))
       f.close()
     
+  
   return redirect(url_for('index'))
 
 
