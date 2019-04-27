@@ -64,15 +64,9 @@ def StoreItems():
   
   return store_items
 
-print("----------------------------------------------------------------------------------------------")
-file_path = "static/data/data_tienda.py"
-print(f"Data loaded at STARTUP from {file_path} at {datetime.now()}")
+
 
 Store_items = StoreItems()
-
-print(Store_items)
-print("----------------------------------------------------------------------------------------------")
-
 
 
 #Retos = Challenges()
@@ -141,6 +135,55 @@ def playersInSession():
   else:
     return []
 
+def generateVS(players):
+
+  '''
+  versus = {
+      'vs':  {
+        'wins': {'label':'wins', 'player':'Oliver', 'value': 5376},
+        'kills': {'label':'kills', 'player':'ana', 'value': 1061670},
+        'k/d': {'label': 'k/d', 'player':'miguel', 'value': 10.29},
+        'games': {'label': 'partidas', 'player':'raul', 'value': 15762},
+        'score': {'label': 'score', 'player':'pepe', 'value': 6084158}
+      }
+    }
+  '''
+  
+  versus = {
+      'vs':  {
+        'Wins': {'label':'wins', 'player':'', 'value': 0},
+        'Kills': {'label':'kills', 'player':'', 'value': 0},
+        'K/d': {'label': 'k/d', 'player':'', 'value': 0},
+        'Matches Played': {'label': 'partidas', 'player':'', 'value': 0},
+        'Score': {'label': 'score', 'player':'', 'value': 0}
+      }
+    }
+
+  for player in players:
+    for key in keysForMainStats:
+      player_name = player['name']
+      label = key
+      player_value = 0
+      versus_value = float(versus['vs'][key]['value'])
+
+      if key == 'K/d':
+        player_value = float(player['lifetimeStats'][key])
+      else:
+        player_value = float(player['lifetimeStats'][key].replace(',', ''))
+
+      ##print(f'Player: {player_name} -> {label}: {player_value}({type(player_value)})')
+      ##versus.vs.Wins.player
+
+      if versus_value == player_value:
+        versus['vs'][key]['player'] = f"{versus['vs'][key]['player']} & {player_name}"
+        versus['vs'][key]['value'] = f"{player_value}".replace('.0', '')
+
+      if versus_value < player_value or versus_value == '':
+        versus['vs'][key]['player'] = f"{player_name}"
+        versus['vs'][key]['value'] = f"{player_value}".replace('.0', '')
+
+
+  return versus
 
 ## ----------------------------------------------------------------------------
 ## API Interaction
@@ -211,27 +254,17 @@ def index():
             'lifetimeStats' : currentPlayerStats
           }
 
-          players.append(player)
-          ## print(player)
+          players.append(player)          
           session['players']= players
 
 
-    
+    versus = None
+    if len(players) > 1:
+      versus = generateVS(players=players)
 
-    versus = {
-      'vs':  {
-        'wins': {'label':'wins', 'player':'Oliver', 'value': 11},
-        'kills': {'label':'kills', 'player':'ana', 'value': 22},
-        'kd': {'label': 'k/d', 'player':'miguel', 'value': 0.29},
-        'partidas': {'label': 'partidas', 'player':'raul', 'value': 44},
-        'score': {'label': 'score', 'player':'pepe', 'value': 55}
-      }
-    }
-
-    return render_template('vs.html', playerName=playerName, playerPlatform=playerPlatform, players=players, versus=versus)
+    return render_template('vs.html', players=players, versus=versus)
 
   elif request.method == "GET":  
-    #Store_items = StoreItems()
     items = weeklyItems()
     return render_template('index.html', articulos=Articulos, daily_items=items)
 
@@ -275,11 +308,6 @@ def updatetienda():
   response = requests.get(URL, headers=headers)
   response_json = response.json()
   response_text = response.text
-  print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-  print(f"Data returned from API call at {datetime.now()}")
-  print(response_json)
-  #response_json = response.json()  
-  print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
   
   ## Create JSON Object with current items in the store
   today = datetime.now().strftime("%Y-%m-%d")
@@ -297,25 +325,11 @@ def updatetienda():
 
   with open (file_path, "w") as f:
     f.write(json.dumps(store_items))
-    print(store_items)
-
-    print("----------------------------------------------------------------------------------------------")
-    file_path = "static/data/data_tienda.py"
-    print(f"Data saved in {file_path} at {datetime.now()}")
-
-    print(json.dumps(store_items))
-    print("----------------------------------------------------------------------------------------------")
+    ##print(store_items)
 
     f.close()
 
-  print("----------------------------------------------------------------------------------------------")
-  file_path = "static/data/data_tienda.py"
-  print(f"Data loaded after {file_path} has been updated at {datetime.now()}")
-
   Store_items = StoreItems()
-
-  print(Store_items)
-  print("----------------------------------------------------------------------------------------------")
 
 
 
@@ -375,13 +389,16 @@ def sitemap():
                            )
 
       sitemap_xml = render_template('sitemap_template.xml', pages=pages)
-      print(sitemap_xml)
+      #print(sitemap_xml)
       response= make_response(sitemap_xml)
       response.headers["Content-Type"] = "application/xml"    
     
       return response
     except Exception as e:
         return(str(e))
+
+
+
 ## ----------------------------------------------------------------------------
 ## Main
 ## ----------------------------------------------------------------------------

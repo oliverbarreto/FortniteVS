@@ -189,6 +189,35 @@ body, wrapper {
   max-height: 150px;
 }
 
+.section-versus-stats-label {
+  color: #2F2F2F;
+  font-size: 1rem;
+  font-weight: 100;  
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+}
+
+.section-versus-stats-name {
+  color: #472D9C;
+  font-size: 1rem;
+  font-weight: 100;  
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+}
+
+.section-versus-stats-value {
+  color: #070C14;
+  font-size: 2.2rem;
+  font-weight: 100;  
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+}
 
 
 
