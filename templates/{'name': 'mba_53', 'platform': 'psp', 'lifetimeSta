@@ -1,0 +1,106 @@
+{'name': 'mba_53', 'platform': 'psp', 'lifetimeStats': [{'key': 'Top 5s', 'value': '39'}, {'key': 'Top 3s', 'value': '67'}, {'key': 'Top 6s', 'value': '177'}, {'key': 'Top 10', 'value': '49'}, {'key': 'Top 12s', 'value': '136'}, {'key': 'Top 25s', 'value': '157'}, {'key': 'Score', 'value': '306,340'}, {'key': 'Matches Played', 'value': '2609'}, {'key': 'Wins', 'value': '15'}, {'key': 'Win%', 'value': '1%'}, {'key': 'Kills', 'value': '568'}, {'key': 'K/d', 'value': '0.22'}]}
+
+{'name': 'mba_53', 'platform': 'psp', 'lifetimeStats': {'Score': '306,340', 'Matches Played': '2609', 'Wins': '15', 'Kills': '568', 'K/d': '0.22'}}
+
+
+  <p>--------------------------</p>
+  <div class="row"> 
+    <p>"item Length" {{ item|length }}</p>
+    <p>" ------ item value ----- "{{ item['wins'] }}</p>
+    <p>"class type item" {{item['wins'].__class__.__name__ }}</p>
+    <p>``````````````````````````````````</p>
+
+    <div class="col-6">
+      {% for token in item['wins'] %} 
+          <p>********************************</p>
+          <p>"class type token" {{token.__class__.__name__ }}</p>
+          <p>"token Length" {{ token|length }}</p>
+
+
+          <p class="section-players-stats-label">"token:" {{ token }}</p>                          
+          
+                                    
+      {% endfor%}
+
+    </div>  
+  </div>
+
+
+{% if item["wins"] %}
+  <div class="col-6">
+    <p class="section-players-stats-label">wins</p>
+    <p class="section-players-stats-value"> {{ item.['wins']['player'] }}</p>
+    <p class="section-players-stats-value"> {{ item.['wins']['value'] }}</p>
+  </div>
+{ % elif item["kills"] %}
+  <div class="col-6">
+  <p class="section-players-stats-label">kills</p>
+  <p class="section-players-stats-value"> {{ item.['kills']['player'] }}</p>
+  <p class="section-players-stats-value"> {{ item.['kills']['value'] }}</p>
+  </div>
+{ % elif item["k/d"] %}
+  <div class="col-6">
+  <p class="section-players-stats-label">k/d</p>
+  <p class="section-players-stats-value"> {{ item.['k/d']['player'] }}</p>
+  <p class="section-players-stats-value"> {{ item.['k/d']['value'] }}</p>
+  </div>
+  { % elif item["games"] %}
+  <div class="col-6">
+  <p class="section-players-stats-label">games</p>
+  <p class="section-players-stats-value"> {{ item.['games']['player'] }}</p>
+  <p class="section-players-stats-value"> {{ item.['games']['value'] }}</p>
+  </div>
+{ % elif item["score"] %}
+  <div class="col-6">
+  <p class="section-players-stats-label">score</p>
+  <p class="section-players-stats-value"> {{ item.['score']['player'] }}</p>
+  <p class="section-players-stats-value"> {{ item.['score']['value'] }}</p>
+  </div>
+{ % endif %}
+
+
+
+ {% for item in versus %}
+    
+
+                  <div class="row"> 
+                    <p>"---------------------"</p>
+                    <p>{{item}}</p> 
+                    <br>
+                    <p>"class type item" {{item.__class__.__name__ }}</p>
+                    <br>
+                    <p>"class type item['wins']" {{item['wins'].__class__.__name__ }}</p>
+                    <br>
+                    <p>" --- item.wins: "{{item.wins}}</p>
+                    <br>
+                    <p>"item.wins Length" {{ item.wins|length }}</p>
+                    <br>
+
+                    <p>"---------------------"</p>
+                    <br>
+                    <p>"class type item['kills']" {{item['wins'].__class__.__name__ }}</p>
+                    <br>
+                    <p>" --- item.kills: "{{item.kills}}</p>                    
+                    <br>
+                    <p>"item.kills Length" {{ item.kills|length }}</p>
+                    <br>
+                    {% for key, value in  item.wins.items() %}
+                      <h1>Key: {{key}}</h1>
+                      <h2>Value: {{value}}</h2>
+                   {% endfor %}
+
+                    {% for token in item.wins %}
+                      <p>"class type token" {{token.__class__.__name__ }}</p>
+                      <br>  
+                      <p>{{token}}</p>
+
+                    {% endfor %}
+
+
+                
+
+
+
+                  </div>
+  
+                {% endfor %}

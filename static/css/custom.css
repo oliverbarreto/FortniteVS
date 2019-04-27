@@ -185,6 +185,10 @@ body, wrapper {
   vertical-align: baseline;
 }
 
+.versus-image {
+  max-height: 150px;
+}
+
 
 
 

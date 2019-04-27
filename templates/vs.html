@@ -63,7 +63,6 @@
                 </button>
               </div>
 
-              
               {% endfor %}
           </div>        
         </div>
@@ -72,9 +71,50 @@
       {% endwith %}
 
 
-      <!-- Section VERSUS -->
-
       
+      <!-- Section VERSUS -->
+      <!-- 
+      {% if versus %}
+        <div id="VSstats-versus" class="container-fluid section-players-stats">
+          <div class="row justify-content-center my-1 my-md-5">
+              <div class="col-12 col-md-4 section-players-stats-card text-center mt-5  mx-1">
+                
+                <img class="img-fluid versus-image mt-3" src="static/img/fortnite_game_plate.png" alt="fortnite versus">
+                <h1 class="section-players-stats-name my-4">versus</h1>
+                <div class="row">
+                  <div class="col-6">
+                    <p class="section-players-stats-label">wins:</p>
+                    <p class="section-players-stats-value"> {{ versus.vs.wins.player }}</p>
+                    <p class="section-players-stats-value"> {{ versus.vs.wins.value }}</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="section-players-stats-label">kills:</p>
+                    <p class="section-players-stats-value"> {{ versus.vs.kills.player }}</p>
+                    <p class="section-players-stats-value"> {{ versus.vs.kills.value }}</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="section-players-stats-label">kd:</p>
+                    <p class="section-players-stats-value"> {{ versus.vs.kd.player }}</p>
+                    <p class="section-players-stats-value"> {{ versus.vs.kd.value }}</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="section-players-stats-label">partidas:</p>
+                    <p class="section-players-stats-value"> {{ versus.vs.partidas.player }}</p>
+                    <p class="section-players-stats-value"> {{ versus.vs.partidas.value }}</p>
+                  </div>
+                  <div class="col-12">
+                    <p class="section-players-stats-label">score:</p>
+                    <p class="section-players-stats-value"> {{ versus.vs.score.player }}</p>
+                    <p class="section-players-stats-value"> {{ versus.vs.score.value }}</p>
+                  </div>                                    
+                </div>
+                
+              </div>
+          </div>
+        </div>
+      {% endif %}
+
+      -->
       <!-- Section PLAYERS Individual STATS-->
       {% if players %}
         <div id="VSstats-players" class="container-fluid section-players-stats">
@@ -95,7 +135,7 @@
                   <p class="section-players-stats-value"> {{ player.lifetimeStats['Kills'] }}</p>
                 </div>
                 <div class="col-6">
-                  <p class="section-players-stats-label">K/d:</p> 
+                  <p class="section-players-stats-label">K/D:</p> 
                   <p class="section-players-stats-value"> {{ player.lifetimeStats['K/d'] }}</p>
                 </div>
                 <div class="col-6">
@@ -106,7 +146,7 @@
                   <p class="section-players-stats-label">score:</p> 
                   <p class="section-players-stats-value"> {{ player.lifetimeStats['Score'] }}</p>
                 </div>
-                              </div>
+              </div>
             </div>    
 
           {% endfor %}            

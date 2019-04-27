@@ -1,6 +1,59 @@
 def dummyArticles():
 	articles = [
     {
+    'id' : 17,
+    'title': "FORTNITE ITEM SHOP 27TH APRIL – AVENGERS WIDOW SKIN & ALL...",
+    'body': "The Fortnite Item Shop has reset as it does every day, displays new cosmetics for players to purchase using V-Bucks.The Fortnite Item Shop has...",
+    'author': "@fortniteinsider",
+    'image': "https://fortniteinsider.com/wp-content/uploads/2019/04/Fortnite-Avengers-Skin-Black-Widow.jpeg",
+    'source_link': "https://fortniteinsider.com/fortnite-item-shop-27th-april-avengers-widow-skin-all-other-fortnite-skins-and-cosmetics/",
+    'create_date': "26 abril 2019"
+    },     
+    {
+    'id' : 16,
+    'title': "FORTNITE CHEAT SHEET MAP FOR SEASON 8, WEEK 9 CHALLENGES",
+    'body': "Epic Games have made some changes to the new Fortnite X Avengers: Endgame LTM.Epic Games officially began their second collaboration with Marvel Avengers today,..",
+    'author': "@fortniteinsider",
+    'image': "https://fortniteinsider.com/wp-content/uploads/2019/04/Fortnite-X-Avengers-Endgame-Teaser-3-324x160.jpg",
+    'source_link': "https://fortniteinsider.com/fortnite-x-avengers-endgame-ltm-changes/",
+    'create_date': "25 abril 2019"
+    },    
+    {
+    'id' : 15,
+    'title': "FORTNITE AVENGERS ENDGAME CHALLENGES AND REWARDS – DAY 1",
+    'body': "The Day 1 challenges and rewards for the Fortnite Avengers Endgame challenges and rewards are now live.  The Fortnite servers are back up after maintenance...",
+    'author': "@fortniteinsider",
+    'image': "https://fortniteinsider.com/wp-content/uploads/2019/04/Fortnite-x-avengers.jpg",
+    'source_link': "https://fortniteinsider.com/fortnite-avengers-endgame-challenges-and-rewards-day-1/",
+    'create_date': "25 abril 2019"
+    },      {
+    'id' : 14,
+    'title': "Fortnite Season 8 Week 9 Challenges",
+    'body': "The ninth week of Fortnite Season 8 Challenges is live on PC, PlayStation 4, and Xbox One. Get in there and earn...",
+    'author': "@fortniteintel",
+    'image': "https://fortniteintel.com/wp-content/uploads/2019/04/S8W9Load-1021x580.jpg",
+    'source_link': "https://fortniteintel.com/fortnite-season-8-week-9-challenges/16442/",
+    'create_date': "25 abril 2019"
+    },    
+    {
+    'id' : 13,
+    'title': "ALL FORTNITE BATTLE ROYALE MAP CHANGES IN THE V8.50 UPDATE",
+    'body': "There were a few changes to the Fortnite map in the v8.50 update today.Instead of having a brand new map, Epic has decided to...",
+    'author': "@fortniteinsider",
+    'image': "https://fortniteinsider.com/wp-content/uploads/2019/04/Fortnite-v8.50-Map-Changes-Love-Stones-min-324x160.png",
+    'source_link': "https://fortniteinsider.com/all-fortnite-battle-royale-map-changes-in-the-v8-50-update/",
+    'create_date': "25 abril 2019"
+    },    
+    {
+    'id' : 12,
+    'title': "FORTNITE CHEAT SHEET MAP FOR SEASON 8, WEEK 9 CHALLENGES",
+    'body': "Struggling to complete the challenges for Fortnite Season 8, Week 9? Here's a cheat sheet that'll help you complete all of the week 9...",
+    'author': "@fortniteinsider",
+    'image': "https://fortniteinsider.com/wp-content/uploads/2019/04/Fortnite-Season-8-Week-9-Challenges-Cheat-Sheet-Map-324x160.jpg",
+    'source_link': "https://fortniteinsider.com/fortnite-cheat-sheet-map-for-season-8-week-9-challenges/",
+    'create_date': "25 abril 2019"
+    },    
+    {
     'id' : 11,
     'title': "Where to Find 'Fortnite' Vending Machines for a Season 8, Week 8 Challenge",
     'body': "Vending Machines in the world of Fortnite they have many different potential spawn points across the map, but there’s no guarantee that they’ll appear. One particular task added Thursday morning as part of the Season 8, Week 8....",

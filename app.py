@@ -216,7 +216,19 @@ def index():
           session['players']= players
 
 
-    return render_template('vs.html', playerName=playerName, playerPlatform=playerPlatform, players=players)
+    
+
+    versus = {
+      'vs':  {
+        'wins': {'label':'wins', 'player':'Oliver', 'value': 11},
+        'kills': {'label':'kills', 'player':'ana', 'value': 22},
+        'kd': {'label': 'k/d', 'player':'miguel', 'value': 0.29},
+        'partidas': {'label': 'partidas', 'player':'raul', 'value': 44},
+        'score': {'label': 'score', 'player':'pepe', 'value': 55}
+      }
+    }
+
+    return render_template('vs.html', playerName=playerName, playerPlatform=playerPlatform, players=players, versus=versus)
 
   elif request.method == "GET":  
     #Store_items = StoreItems()
