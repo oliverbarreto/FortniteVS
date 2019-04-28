@@ -12,10 +12,10 @@ def dummyArticles():
     {
     'id' : 16,
     'title': "FORTNITE CHEAT SHEET MAP FOR SEASON 8, WEEK 9 CHALLENGES",
-    'body': "Epic Games have made some changes to the new Fortnite X Avengers: Endgame LTM.Epic Games officially began their second collaboration with Marvel Avengers today,..",
+    'body': "Struggling to complete the challenges for Fortnite Season 8, Week 9? Here’s a cheat sheet that’ll help you complete all of the week 9 challenges as quickly as possible...",
     'author': "@fortniteinsider",
-    'image': "https://fortniteinsider.com/wp-content/uploads/2019/04/Fortnite-X-Avengers-Endgame-Teaser-3-324x160.jpg",
-    'source_link': "https://fortniteinsider.com/fortnite-x-avengers-endgame-ltm-changes/",
+    'image': "https://fortniteinsider.com/wp-content/uploads/2019/04/Fortnite-Season-8-Week-9-Challenges-Cheat-Sheet-Map.jpg",
+    'source_link': "https://fortniteinsider.com/fortnite-cheat-sheet-map-for-season-8-week-9-challenges/",
     'create_date': "25 abril 2019"
     },    
     {

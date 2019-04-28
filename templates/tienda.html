@@ -19,7 +19,7 @@
          <!--
         <h1 class="header-tienda">Daily Items ({{ daily_items|length }})</h1>  
         -->
-        <h1 class="header-tienda">Featured Items</h1>  
+        <h1 class="header-tienda">Destacados</h1>  
       </div>
 
       <div class="flex-row">
@@ -35,6 +35,7 @@
                 {% elif item.rarity == 'Handmade' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117);border: 2px solid #87e339;
                 {% elif item.rarity == 'Quality' %} background: radial-gradient(ellipse at center 55%, #b15be2,#4b2483);border: 2px solid #e95eff;
                 {% elif item.rarity == 'Uncommon' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117); border: 2px solid #87e339;
+                {% else %} background: radial-gradient(ellipse at center 55%, #680508,#d51a18); border: 2px solid #ff9f37;
                 {% endif %}">
                   <img src="{{ item.imageUrl }}" class="card-img" alt="fortnite image">
                   <div class="card-body card-tienda-hoy-body">
@@ -67,7 +68,7 @@
          <!--
         <h1 class="header-tienda">Daily Items ({{ daily_items|length }})</h1>  
         -->
-        <h1 class="header-tienda">Daily Items</h1>  
+          <h1 class="header-tienda">Artículos diarios</h1>  
       </div>
 
       <div class="flex-row">
@@ -82,6 +83,7 @@
               {% elif item.rarity == 'Handmade' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117);border: 2px solid #87e339;
               {% elif item.rarity == 'Quality' %} background: radial-gradient(ellipse at center 55%, #b15be2,#4b2483);border: 2px solid #e95eff;
               {% elif item.rarity == 'Uncommon' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117); border: 2px solid #87e339;
+              {% else %} background: radial-gradient(ellipse at center 55%, #680508,#d51a18); border: 2px solid #ff9f37;
               {% endif %}">
                 <img src="{{ item.imageUrl }}" class="card-img" alt="fortnite image">
                 <div class="card-body card-tienda-hoy-body">
