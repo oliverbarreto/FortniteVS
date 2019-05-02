@@ -268,17 +268,6 @@ def index():
     items = weeklyItems()
     return render_template('index.html', articulos=Articulos, daily_items=items)
 
-@app.route('/contacto')
-def contacto():
-  return  render_template('contacto.html')
-
-@app.route('/privacidad')
-def politicadeprivacidad():
-  return  render_template('politicadeprivacidad.html')
-
-@app.route('/condiciones')
-def condicionesdeservicio():
-  return  render_template('condicionesdeservicio.html')
 
 @app.route('/clear')
 def clear():
@@ -364,6 +353,26 @@ def updatetienda():
   return redirect(url_for('index'))
 
 
+
+
+## ----------------------------------------------------------------------------
+## website contact & legal info 
+## ----------------------------------------------------------------------------
+@app.route('/contacto')
+def contacto():
+  return  render_template('contacto.html')
+
+@app.route('/privacidad')
+def politicadeprivacidad():
+  return  render_template('politica_privacidad.html')
+
+@app.route('/condiciones')
+def condicionesdeservicio():
+  return  render_template('condiciones_servicio.html')
+
+@app.route('/politicacookies')
+def politicacookies():
+  return  render_template('politica_cookies.html')
 
 
 @app.route('/robots.txt/')
