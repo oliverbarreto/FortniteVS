@@ -1,14 +1,13 @@
-# -*- coding: utf-8 -*-
-
 from flask import Flask, render_template, url_for, redirect, request, session, flash, make_response
+from fortniteversus import app
+##from fortniteversus.forms import RegistrationForm, LoginForm
+from fortniteversus.models import NewsItems, StoreItems
 import requests
 import os
 import json
 from datetime import datetime,timedelta
 
-##from data import Articles, StoreItems, Challenges
-## from data_tienda import StoreItems
-## from data_noticias import Articles
+
 
 
 ## ----------------------------------------------------------------------------
@@ -29,66 +28,11 @@ platforms = ['psn', 'xbl', 'pc']
 
 
 ## ----------------------------------------------------------------------------
-## App & Config
+## Dummy DATA
 ## ----------------------------------------------------------------------------
-
-app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY') or os.urandom(24)
-
-
-## ----------------------------------------------------------------------------
-## Dummy DATA
-## ----------------------------------------------------------------------------
-## ARTICULOS SECCIÓN NOTICIAS
-def dummyNews_Items():
-  file_path = "static/data/data_noticias.py"
-  if os.path.exists(file_path):
-    with open (file_path, "r") as f:
-      content = f.read()
-      content_json = json.loads(content)
-      #print(content_json)
-      f.close()
-      
-      return content_json
-
-  else:
-    ## print("EMPTY data_noticias.py")
-    return []
-
-def NewsItems():
-  news_items = dummyNews_Items()
-  
-  return news_items
-
 Noticias_items = NewsItems()
-
-
-
-## ARITCULOS DE LA TIENDA
-def dummyStore_Items():
-  file_path = "static/data/data_tienda.py"
-  if os.path.exists(file_path):
-    with open (file_path, "r") as f:
-      content = f.read()
-      content_json = json.loads(content)["store_items"]
-      #print(content_json)
-      f.close()
-      
-      return content_json
-
-  else:
-    ## print("EMPTY data_tienda.py")
-    return []
-
-def StoreItems():
-  store_items = dummyStore_Items()
-  
-  return store_items
-
 Store_items = StoreItems()
 
-
-#Retos = Challenges()
 
 ## ----------------------------------------------------------------------------
 ## Custom Methods
@@ -343,7 +287,7 @@ def updatetienda():
   }
 
   ## Write results data on file for Current Items in the store
-  file_path = "static/data/data_tienda.py"
+  file_path = "fortniteversus/static/data/data_tienda.py"
 
   if not os.path.exists(file_path):
     with open (file_path, "w") as f:
@@ -358,10 +302,9 @@ def updatetienda():
   Store_items = StoreItems()
 
 
-
-
+  
   ## Create backup JSON object from file 
-  file_path = "static/data/data_tienda_old.py"
+  file_path = "fortniteversus/static/data/data_tienda_old.py"
 
   if not os.path.exists(file_path):
     with open (file_path, "w") as f:
@@ -388,7 +331,6 @@ def updatetienda():
     
   
   return redirect(url_for('index'))
-
 
 
 
@@ -442,14 +384,6 @@ def sitemap():
       return response
     except Exception as e:
         return(str(e))
-
-
-
-## ----------------------------------------------------------------------------
-## Main
-## ----------------------------------------------------------------------------
-if __name__ == '__main__':
-  app.run(debug=True, port=5000)
 
 
 
