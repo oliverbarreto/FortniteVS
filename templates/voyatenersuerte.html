@@ -59,15 +59,11 @@
       </footer>
 
       <!-- Cookie-Alert -->
-      <div class="alert text-center cookiealert" role="alert">
-        <p>Este sitio web utiliza cookies únicamente para mostrar publicidad básica en el sitio web. Lee más sobre nuestra <a href="/politicacookies">Política de Cookies</a>. Te recomendamos el sitio <a href="https://cookiesandyou.com/">cookiesandyou.com</a> para aprender sobre el uso de las cookies, para qué sirven y como desactivarlas</p>
-        <button type="button" class="btn btn-warning btn-sm acceptcookies" aria-label="Close">aceptar</button>
-      </div>
+      {% include 'includes/_cookiealert.html' %}
       
 
 
     <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/cookiealert.js"></script>
     
     <script>
       document.getElementById("random_location").onclick = function() {

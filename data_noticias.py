@@ -1,5 +1,30 @@
 def dummyArticles():
 	articles = [
+     {
+    'id' :20,
+    'title': "FORTNITE ITEM SHOP 27TH APRIL – AVENGERS WIDOW SKIN & ALL...",
+    'body': "The event will be taking place tomorrow as a countdown has appeared above the vault at Loot Lake.Data-miners have been leaking the new event...",
+    'author': "@fortniteinsider",
+    'image': "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Loot-Lake-Countdown-min.png",
+    'source_link': "https://fortniteinsider.com/a-countdown-has-appeared-at-loot-lake-in-fortnite/",
+    'create_date': "4 mayo 2019"
+    },     {
+    'id' : 19,
+    'title': "FORTNITE CHEAT SHEET MAP FOR SEASON 8, WEEK 10 CHALLENGES",
+    'body': "Struggling to complete the challenges for Fortnite Season 8, Week 10? Here's a cheat sheet that'll help you complete all of the week 10...",
+    'author': "@fortniteinsider",
+    'image': "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Season-8-Week-10-Challenges-Cheat-Sheet-Map.jpg",
+    'source_link': "https://fortniteinsider.com/fortnite-cheat-sheet-map-for-season-8-week-10-challenges/",
+    'create_date': "2 mayo 2019"
+    },     {
+    'id' : 18,
+    'title': "FORTNITE SEASON 8, WEEK 10 CHALLENGES",
+    'body': "Here are the official challenges for Fortnite Season 8, Week 10.Week 10 is already here in Fortnite Battle Royale and these will be the...",
+    'author': "@fortniteinsider",
+    'image': "https://fortniteinsider.com/wp-content/uploads/2019/04/Fortnite-Season-8-Discovery-Challenge-Week-10-Loading-Screen-Leaked.jpg",
+    'source_link': "https://fortniteinsider.com/how-to-complete-the-follow-the-treasure-map-signpost-in-junk-junction-fortnite-challenge/",
+    'create_date': "2 mayo 2019"
+    },    
     {
     'id' : 17,
     'title': "FORTNITE ITEM SHOP 27TH APRIL – AVENGERS WIDOW SKIN & ALL...",

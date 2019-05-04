@@ -43,6 +43,12 @@ body, wrapper {
 }
 
 
+.stats-remove {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 
 
 /* NEW WEB --- app2.py */

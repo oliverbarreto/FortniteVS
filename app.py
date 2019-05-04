@@ -216,6 +216,22 @@ def test():
 ## ----------------------------------------------------------------------------
 ## Routes & Views
 ## ----------------------------------------------------------------------------
+
+@app.route('/remove/<string:id>')
+def remove(id):
+  players = session['players']
+  
+  for index, player in enumerate(players):
+    if player['name'] == id:
+      del players[index]
+
+  versus = None
+  if len(players) > 1:
+    versus = generateVS(players=players)
+
+  return redirect(url_for('index', players=players, versus=versus))
+  
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
   #return render_template('vs.html', players=players, vs=vs)
@@ -255,7 +271,7 @@ def index():
           }
 
           players.append(player)          
-          session['players']= players
+          session['players'] = players
 
 
     versus = None
