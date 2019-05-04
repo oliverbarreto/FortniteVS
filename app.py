@@ -235,8 +235,9 @@ def index():
 
       versus = None
       if len(players) == 0:
-        items = weeklyItems()
-        return render_template('index.html', articulos=Articulos, daily_items=items)
+        session.clear()
+        return redirect(url_for('index'))
+
       if len(players) > 1:
         versus = generateVS(players=players)
 
