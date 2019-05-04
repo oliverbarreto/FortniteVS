@@ -205,32 +205,10 @@ def getPlayerLifeTimeStats(name, platform):
   return lifeTimeStatsDataForPlayer
 
 
-## ----------------------------------------------------------------------------
-## DELETE ON PRODUCTION
-## ----------------------------------------------------------------------------
-@app.route('/test')
-def test():
-  return  render_template('test.html')
-
 
 ## ----------------------------------------------------------------------------
 ## Routes & Views
 ## ----------------------------------------------------------------------------
-
-@app.route('/remove/<string:id>')
-def remove(id):
-  players = session['players']
-  
-  for index, player in enumerate(players):
-    if player['name'] == id:
-      del players[index]
-
-  versus = None
-  if len(players) > 1:
-    versus = generateVS(players=players)
-
-  return redirect(url_for('index', players=players, versus=versus))
-  
 
 @app.route('/', methods=['GET', 'POST'])
 def index():

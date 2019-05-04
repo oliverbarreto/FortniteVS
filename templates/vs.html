@@ -117,7 +117,7 @@
       {% endif %}
 
       
-      <!-- Section PLAYERS Individual STATS-->
+      <!-- Section PLAYERS Individual STATS -->
       {% if players %}
         <div id="VSstats-players" class="container-fluid section-players-stats">
           <div class="row justify-content-center my-1 my-md-5">
@@ -125,10 +125,7 @@
           {% for player in players %}
             <div class="col-12 col-md-4 section-players-stats-card text-center mt-5  mx-1">
 
-              <div class="stats-remove">
-                <a href="{{ url_for('remove', id=player.name) }}"><i class="fas fa-times"></i></a>
-              </div>
-
+             
               <h1 class="section-players-stats-name mt-4">{{ player.name }}</h1>
               <p class="section-players-stats-platform mb-4">{% include 'includes/_platformIcon.html' %}</p>
               
