@@ -93,11 +93,15 @@ body, wrapper {
 /* Sección Home -  BUSCADOR VS */
 /* -------------------------------------------------------- */ 
 
-/* botón eliminar jugador de sesión en versus.html */ 
+/* Botón eliminar jugador de sesión en versus.html */ 
 .stats-remove {
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.btn-remove-player {
+  color: #472D9C;
 }
 
 .section-buscador {
@@ -456,6 +460,10 @@ body, wrapper {
   height: calc(100vh - 56px)
 }
 
+
+/* -------------------------------------------------------- */ 
+/* Sección Cookie Alert div */
+/* -------------------------------------------------------- */ 
 
 .cookiealert {
     position: fixed;

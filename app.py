@@ -224,30 +224,26 @@ def index():
     players = playersInSession()
 
 
+    ## If we remove a player from versusl.html using the x button (post send with form on button)
     if "remove" in request.form:
       removePlayerName = request.form.get("remove")
-      print("**************************************************************************")
-      print(f"player to remove {removePlayerName}")
-
+      
       for index, player in enumerate(players):
         if player['name'] == removePlayerName:
           del players[index]
           session['players'] = players
 
       versus = None
+      if len(players) == 0:
+        items = weeklyItems()
+        return render_template('index.html', articulos=Articulos, daily_items=items)
       if len(players) > 1:
         versus = generateVS(players=players)
 
-
-      print("**************************************************************************")
-      print(f"session: {session}")
-      print("**************************************************************************")
-      print(f"players: {players}")
-      print("**************************************************************************")
-      print(f"versus: {versus}")
       return render_template('vs.html', players=players, versus=versus)
 
 
+    ## If we search for a player from index.html or versus.html search box form
     playerName = request.form.get("playerName")
     playerPlatform = request.form.get("platform")  
 
