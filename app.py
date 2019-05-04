@@ -8,7 +8,7 @@ from datetime import datetime,timedelta
 
 ##from data import Articles, StoreItems, Challenges
 ## from data_tienda import StoreItems
-from data_noticias import Articles
+## from data_noticias import Articles
 
 
 ## ----------------------------------------------------------------------------
@@ -39,11 +39,32 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY') or os.urandom(24)
 ## ----------------------------------------------------------------------------
 ## Dummy DATA
 ## ----------------------------------------------------------------------------
-## ARTICULOS NOTICIAS
-Articulos = Articles()
+## ARTICULOS SECCIÓN NOTICIAS
+def dummyNews_Items():
+  file_path = "static/data/data_noticias.py"
+  if os.path.exists(file_path):
+    with open (file_path, "r") as f:
+      content = f.read()
+      content_json = json.loads(content)
+      #print(content_json)
+      f.close()
+      
+      return content_json
+
+  else:
+    ## print("EMPTY data_noticias.py")
+    return []
+
+def NewsItems():
+  news_items = dummyNews_Items()
+  
+  return news_items
+
+Noticias_items = NewsItems()
 
 
-## ITEMS TIENDA
+
+## ARITCULOS DE LA TIENDA
 def dummyStore_Items():
   file_path = "static/data/data_tienda.py"
   if os.path.exists(file_path):
@@ -63,8 +84,6 @@ def StoreItems():
   store_items = dummyStore_Items()
   
   return store_items
-
-
 
 Store_items = StoreItems()
 
@@ -284,7 +303,7 @@ def index():
 
   elif request.method == "GET":  
     items = weeklyItems()
-    return render_template('index.html', articulos=Articulos, daily_items=items)
+    return render_template('index.html', articulos=Noticias_items, daily_items=items)
 
 
 @app.route('/clear')
@@ -302,7 +321,7 @@ def voyatenersuerte():
 
 @app.route('/noticias')
 def noticias():
-  return  render_template('noticias.html', articulos=Articulos)
+  return  render_template('noticias.html', articulos=Noticias_items)
 
 @app.route('/tienda')
 def articulostienda():
