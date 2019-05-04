@@ -125,6 +125,15 @@
           {% for player in players %}
             <div class="col-12 col-md-4 section-players-stats-card text-center mt-5  mx-1">
 
+              <div class="stats-remove">
+                
+                <form action="/" method="post">
+                  <button type="submit" name="remove" value="{{ player.name }}" class="btn btn-link"><i class="fas fa-times"></i></button>
+                </form>
+
+                
+              </div>
+
              
               <h1 class="section-players-stats-name mt-4">{{ player.name }}</h1>
               <p class="section-players-stats-platform mb-4">{% include 'includes/_platformIcon.html' %}</p>

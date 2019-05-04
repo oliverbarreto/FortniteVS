@@ -185,9 +185,11 @@ def generateVS(players):
 
   return versus
 
+###############################################################################
 ## ----------------------------------------------------------------------------
 ## API Interaction
 ## ----------------------------------------------------------------------------
+
 def getPlayerLifeTimeStats(name, platform):
   ## Build stats_dict
   response = requests.get(URL.format(platform, name.strip()), headers=headers)
@@ -205,7 +207,7 @@ def getPlayerLifeTimeStats(name, platform):
   return lifeTimeStatsDataForPlayer
 
 
-
+###############################################################################
 ## ----------------------------------------------------------------------------
 ## Routes & Views
 ## ----------------------------------------------------------------------------
@@ -220,6 +222,31 @@ def index():
   if request.method == "POST":
     ## Check session data, and build players array if any, empty array if not
     players = playersInSession()
+
+
+    if "remove" in request.form:
+      removePlayerName = request.form.get("remove")
+      print("**************************************************************************")
+      print(f"player to remove {removePlayerName}")
+
+      for index, player in enumerate(players):
+        if player['name'] == removePlayerName:
+          del players[index]
+          session['players'] = players
+
+      versus = None
+      if len(players) > 1:
+        versus = generateVS(players=players)
+
+
+      print("**************************************************************************")
+      print(f"session: {session}")
+      print("**************************************************************************")
+      print(f"players: {players}")
+      print("**************************************************************************")
+      print(f"versus: {versus}")
+      return render_template('vs.html', players=players, versus=versus)
+
 
     playerName = request.form.get("playerName")
     playerPlatform = request.form.get("platform")  

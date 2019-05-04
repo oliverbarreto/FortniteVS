@@ -43,13 +43,6 @@ body, wrapper {
 }
 
 
-.stats-remove {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-
 
 /* NEW WEB --- app2.py */
 
@@ -99,6 +92,14 @@ body, wrapper {
 /* -------------------------------------------------------- */ 
 /* Sección Home -  BUSCADOR VS */
 /* -------------------------------------------------------- */ 
+
+/* botón eliminar jugador de sesión en versus.html */ 
+.stats-remove {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 .section-buscador {
   background-image: url('/static/img/llama.jpg'); 
   background-position: 30% 50%;
@@ -494,10 +495,7 @@ body, wrapper {
 /* -------------------------------------------------------- */ 
 @media (min-width: 576px) { /* Medium Screens */
 
-  .card-noticias-home {
-    
-  }
-  
+
   .header-noticias, .header-tienda {
     font-size: 3rem;
   }
@@ -542,7 +540,8 @@ body, wrapper {
   }
 }
 
-
-@media (min-width: 992px) { /* Large Screens */
-
+/* Large Screens */
+/*
+@media (min-width: 992px) { 
 }
+*/
