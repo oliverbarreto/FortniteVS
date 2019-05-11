@@ -1,4 +1,4 @@
-def dummyArticles():
+ def dummyArticles():
 	articles = [
         {
         "id" :23,
