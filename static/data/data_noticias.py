@@ -16,7 +16,16 @@
     "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Season-9-Week-1-Challenges-Cheat-Sheet-Map-1.jpg",
     "source_link": "https://fortniteinsider.com/fortnite-challenge-visit-all-sky-platforms-7-all-sky-platforms-map-locations/",
     "create_date": "5 mayo 2019"
-    },  
+    },
+    {
+    "id" :21,
+    "title": "ALL FORTNITE SEASON 9 (V9.00) MAP CHANGES – NEO TILTED, MEGA...",
+    "body": "Here are all of the map changes that have taken place at the start of Season 9 in Fortnite Battle Royale.Fortnite Season 9 has...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Season-9-V9.00-Map-Changes-Neo-Tilted-1.png",
+    "source_link": "https://fortniteinsider.com/all-fortnite-season-9-v9-00-map-changes-neo-tilted-mega-plant-more/",
+    "create_date": "9 mayo 2019"
+    },   
     {
     "id" :20,
     "title": "FORTNITE ITEM SHOP 27TH APRIL – AVENGERS WIDOW SKIN & ALL...",
