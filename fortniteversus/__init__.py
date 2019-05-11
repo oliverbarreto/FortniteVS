@@ -1,7 +1,7 @@
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 import os
-##from flask_sqlalchemy import SQLAlchemy
-
+import psycopg2
 
 
 ## -------------------------------------------------------------------------------------------
@@ -29,6 +29,6 @@ app.config.from_object(getEnvironmentVariable('APP_SETTINGS'))
 print(f"Running with Config: '{os.environ['APP_SETTINGS']}'")
 
 ##app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-##db = SQLAlchemy(app)
+db = SQLAlchemy(app)
 
 from fortniteversus import routes
