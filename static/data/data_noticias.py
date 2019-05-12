@@ -1,15 +1,15 @@
 [
     {
-    "id" :23,
-    "title": "ALL FORTNITE SEASON 9 BATTLE PASS ITEMS – INCLUDES SKINS, PICKAXES, GLIDERS, EMOTES, WRAPS & MORE",
-    "body": "Here are all of the items in the Fortnite Season 9 Battle Pass, which includes skins, pickaxes, gliders, emotes, wraps and more.",
+    "id" :26,
+    "title": "LEAKED FORTNITE ITEM SHOP GEMINI SKIN CHALLENGES HAVE BEEN UPDATED",
+    "body": "The Gemini Fortnite skin was added in the files at the end of Season 8, but has not been available for purchase in the...",
     "author": "@fortniteinsider",
-    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Season-9-Battle-Pass-Skins.jpg",
-    "source_link": "https://fortniteinsider.com/all-fortnite-season-9-battle-pass-items-includes-skins-pickaxes-gliders-emotes-wraps-more/",
-    "create_date": "9 mayo 2019"
-    },  
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortbyte-47-Found-between-a-Reboot-Van-Pirate-Camp-and-a-crashed-Battlebus-Map-Collect-Location.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-season-9-fortbyte-47-found-between-a-reboot-van-pirate-camp-and-a-crashed-battlebus-map-location/",
+    "create_date": "12 mayo 2019"
+    },
     {
-    "id" :22,
+    "id" :25,
     "title": "FORTNITE CHEAT SHEET MAP FOR SEASON 9, WEEK 1 CHALLENGES",
     "body": "The first week of challenges for Season 9 are available to complete. One of the challenges requires players to visit all sky platforms. Here's...",
     "author": "@fortniteinsider",
@@ -18,13 +18,40 @@
     "create_date": "5 mayo 2019"
     },
     {
+    "id" :24,
+    "title": "FORTNITE SEASON 9 FORTBYTE #24 – FOUND WITHIN FATAL FIELDS FORTBYTES...",
+    "body": "A new Fortnite Fortbyte challenge, #24, has been unlocked. The challenge/task is 'Found within Fatal Fields'. Here is the location of the Fortbyte.Fortbyte challenges...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Fortbyte-Found-Within-Fatal-Fields-Featured.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-season-9-fortbyte-24-found-within-fatal-fields-fortbytes-challenge-location-guide/",
+    "create_date": "10 mayo 2019"
+    },
+    {
+    "id" :23,
+    "title": "FORTNITE FORTBYTE #36 – ACCESSIBLE BY SENTINEL ON A FROZEN ISLAND...",
+    "body": "Fortbytes were added to Fortnite Battle Royale yesterday in Fortnite Season 9. Here's where to find and collect Fortbyte #36, accessible by Sentinel on...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortbyte-36-Accessible-By-Sentinel-On-A-Frozen-Island-Collect-Location.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-36-accessible-by-sentinel-on-a-frozen-island-collect-location/",
+    "create_date": "10 mayo 2019"
+    },
+    {
+    "id" :22,
+    "title": "ALL FORTNITE SEASON 9 BATTLE PASS ITEMS – INCLUDES SKINS, PICKAXES, GLIDERS, EMOTES, WRAPS & MORE",
+    "body": "Here are all of the items in the Fortnite Season 9 Battle Pass, which includes skins, pickaxes, gliders, emotes, wraps and more.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Season-9-Battle-Pass-Skins.jpg",
+    "source_link": "https://fortniteinsider.com/all-fortnite-season-9-battle-pass-items-includes-skins-pickaxes-gliders-emotes-wraps-more/",
+    "create_date": "9 mayo 2019"
+    },  
+    {
     "id" :21,
     "title": "ALL FORTNITE SEASON 9 (V9.00) MAP CHANGES – NEO TILTED, MEGA...",
     "body": "Here are all of the map changes that have taken place at the start of Season 9 in Fortnite Battle Royale.Fortnite Season 9 has...",
     "author": "@fortniteinsider",
     "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Season-9-V9.00-Map-Changes-Neo-Tilted-1.png",
     "source_link": "https://fortniteinsider.com/all-fortnite-season-9-v9-00-map-changes-neo-tilted-mega-plant-more/",
-    "create_date": "9 mayo 2019"
+    "create_date": "5 mayo 2019"
     },   
     {
     "id" :20,
