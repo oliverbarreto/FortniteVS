@@ -27,7 +27,7 @@ def NewsItems():
   
   return news_items
 
-Noticias_items = NewsItems()
+# Noticias_items = NewsItems()
 
 
 
@@ -52,7 +52,7 @@ def StoreItems():
   
   return store_items
 
-Store_items = StoreItems()
+# Store_items = StoreItems()
 
 
 

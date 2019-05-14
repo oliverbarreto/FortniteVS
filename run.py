@@ -5,4 +5,4 @@ from fortniteversus import app
 ## Main
 ## ----------------------------------------------------------------------------
 if __name__ == '__main__':
-  app.run()
+  app.run(debug=True)

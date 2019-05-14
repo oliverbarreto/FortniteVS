@@ -99,18 +99,6 @@ def playersInSession():
     return []
 
 def generateVS(players):
-
-  '''
-  versus = {
-      'vs':  {
-        'wins': {'label':'wins', 'player':'Oliver', 'value': 5376},
-        'kills': {'label':'kills', 'player':'ana', 'value': 1061670},
-        'k/d': {'label': 'k/d', 'player':'miguel', 'value': 10.29},
-        'games': {'label': 'partidas', 'player':'raul', 'value': 15762},
-        'score': {'label': 'score', 'player':'pepe', 'value': 6084158}
-      }
-    }
-  '''
   
   versus = {
       'vs':  {
