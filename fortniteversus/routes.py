@@ -1,14 +1,14 @@
-# -*- coding: utf-8 -*-
-
 from flask import Flask, render_template, url_for, redirect, request, session, flash, make_response
+from fortniteversus import app
+##from fortniteversus.forms import RegistrationForm, LoginForm
+from fortniteversus.models import StoreItem, dailyItems, weeklyItems, NewsItems
+from fortniteversus import db
 import requests
 import os
 import json
 from datetime import datetime,timedelta
 
-##from data import Articles, StoreItems, Challenges
-## from data_tienda import StoreItems
-## from data_noticias import Articles
+
 
 
 ## ----------------------------------------------------------------------------
@@ -29,66 +29,11 @@ platforms = ['psn', 'xbl', 'pc']
 
 
 ## ----------------------------------------------------------------------------
-## App & Config
+## Dummy DATA
 ## ----------------------------------------------------------------------------
-
-app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY') or os.urandom(24)
-
-
-## ----------------------------------------------------------------------------
-## Dummy DATA
-## ----------------------------------------------------------------------------
-## ARTICULOS SECCIÓN NOTICIAS
-def dummyNews_Items():
-  file_path = "static/data/data_noticias.py"
-  if os.path.exists(file_path):
-    with open (file_path, "r") as f:
-      content = f.read()
-      content_json = json.loads(content)
-      #print(content_json)
-      f.close()
-      
-      return content_json
-
-  else:
-    ## print("EMPTY data_noticias.py")
-    return []
-
-def NewsItems():
-  news_items = dummyNews_Items()
-  
-  return news_items
-
 Noticias_items = NewsItems()
+# Store_items = StoreItems()
 
-
-
-## ARITCULOS DE LA TIENDA
-def dummyStore_Items():
-  file_path = "static/data/data_tienda.py"
-  if os.path.exists(file_path):
-    with open (file_path, "r") as f:
-      content = f.read()
-      content_json = json.loads(content)["store_items"]
-      #print(content_json)
-      f.close()
-      
-      return content_json
-
-  else:
-    ## print("EMPTY data_tienda.py")
-    return []
-
-def StoreItems():
-  store_items = dummyStore_Items()
-  
-  return store_items
-
-Store_items = StoreItems()
-
-
-#Retos = Challenges()
 
 ## ----------------------------------------------------------------------------
 ## Custom Methods
@@ -102,22 +47,6 @@ def stringIsEmpty(string):
     return True
   else:
     return False
-
-def dailyItems():
-    items = []
-
-    for item in Store_items:
-      if item['storeCategory'] == 'BRDailyStorefront':
-        items.append(item)
-    return items
-
-def weeklyItems():
-  items = []
-
-  for item in Store_items:
-    if item['storeCategory'] == 'BRWeeklyStorefront':
-      items.append(item)
-  return items  
 
 def statsForPlayer(player_data):
   ''' Returns a dictionary with the stats for a player
@@ -155,18 +84,6 @@ def playersInSession():
     return []
 
 def generateVS(players):
-
-  '''
-  versus = {
-      'vs':  {
-        'wins': {'label':'wins', 'player':'Oliver', 'value': 5376},
-        'kills': {'label':'kills', 'player':'ana', 'value': 1061670},
-        'k/d': {'label': 'k/d', 'player':'miguel', 'value': 10.29},
-        'games': {'label': 'partidas', 'player':'raul', 'value': 15762},
-        'score': {'label': 'score', 'player':'pepe', 'value': 6084158}
-      }
-    }
-  '''
   
   versus = {
       'vs':  {
@@ -327,69 +244,32 @@ def noticias():
 def articulostienda():
   return render_template('tienda.html', daily_items=dailyItems(), weekly_items=weeklyItems())
 
-@app.route('/update/updatetienda')
-def updatetienda():
+def updatetiendadehoy():
   ## Get current items from API 
   URL = 'https://api.fortnitetracker.com/v1/store'
   response = requests.get(URL, headers=headers)
   response_json = response.json()
-  response_text = response.text
-  
-  ## Create JSON Object with current items in the store
-  today = datetime.now().strftime("%Y-%m-%d")
-  store_items = {
-    "date": today,
-    "store_items": response_json
-  }
-
-  ## Write results data on file for Current Items in the store
-  file_path = "static/data/data_tienda.py"
-
-  if not os.path.exists(file_path):
-    with open (file_path, "w") as f:
-      f.close()
-
-  with open (file_path, "w") as f:
-    f.write(json.dumps(store_items))
-    ##print(store_items)
-
-    f.close()
-
-  Store_items = StoreItems()
-
-
-
-
-  ## Create backup JSON object from file 
-  file_path = "static/data/data_tienda_old.py"
-
-  if not os.path.exists(file_path):
-    with open (file_path, "w") as f:
-      f.close()
-
-  content_json = []
-  with open (file_path, "r") as f:
-    content_text = f.read()
-
-    if not len(content_text) == 0:
-      content_json = json.loads(content_text)
     
-    values = []
-    for item in content_json:
-      values.append(item['date'])
+  for item in response_json:
+    manifest_id = int(item['manifestId'])
+    today = datetime.now().strftime("%Y-%m-%d")
     
-    if store_items['date'] not in values:  
-      # print(content_json.__class__.__name__)
-      content_json.append(store_items)
-    
-    with open (file_path, "w") as f:
-      content = f.write(json.dumps(content_json))
-      f.close()
-    
-  
+    # Si no existe, creamos el registro del item
+    # o... Si existe, pero es de otra fecha, creamos el registro del item
+    count = StoreItem.query.filter_by(manifest_id=manifest_id).count()
+    count_day = StoreItem.query.filter_by(date=today, manifest_id=manifest_id).count()
+    if count == 0 or count_day == 0:
+      store_item = StoreItem(manifest_id=manifest_id, name= item['name'], rarity=item['rarity'], image_url = item['imageUrl'], store_category=item['storeCategory'], vbucks=item['vBucks'])
+      db.session.add(store_item)
+      
+      print("Committing to DB ...")
+      db.session.commit()
+
+@app.route('/update/updatetienda')
+def updatetienda():
+  updatetiendadehoy()
+
   return redirect(url_for('index'))
-
-
 
 
 ## ----------------------------------------------------------------------------
@@ -442,14 +322,6 @@ def sitemap():
       return response
     except Exception as e:
         return(str(e))
-
-
-
-## ----------------------------------------------------------------------------
-## Main
-## ----------------------------------------------------------------------------
-if __name__ == '__main__':
-  app.run(debug=True, port=5000)
 
 
 
