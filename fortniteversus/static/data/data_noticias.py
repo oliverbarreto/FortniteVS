@@ -1,5 +1,114 @@
 [
     {
+    "id" :38,
+    "title": "FORTNITE FORTBYTE 08 (8) LOCATION – FOUND WITHIN JUNK JUNCTION LOCATION...",
+    "body": "Fortbytes are a new set of challenges introduced in Fortnite Season 9. A new challenge is unlocked each day, and a new challenge is...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortbyte-08-Found-Within-Junk-Junction.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-08-8-location-found-within-junk-junction-location-guide/",
+    "create_date": "18 mayo 2019"
+    },
+    {
+    "id" :37,
+    "title": "FORTNITE SEASON 9 FORTBYTE 64 LOCATION – ACCESSIBLE BY ROX ON...",
+    "body": "Fortbyte 64 - Accessible by Rox on top of Stunt Mountain has been unlocked and is available to collect in-game.Another day, another Fortbyte challenge....",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Season-9-Fortbyte-64-Location-Accessible-by-Rox-on-top-of-Stunt-Mountain.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-season-9-fortbyte-64-location-accessible-by-rox-on-top-of-stunt-mountain/",
+    "create_date": "17 mayo 2019"
+    },
+    {
+    "id" :36,
+    "title": "EVERYTHING YOU NEED TO KNOW ABOUT FORTNITE X JOHN WICK –...",
+    "body": "The Fortnite x John Wick has finally been revealed and here is everything you need to know.There had been references around the Fortnite map...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Wicks-Bounty-LTM-Reaper-vs-John-Wick.jpg",
+    "source_link": "https://fortniteinsider.com/everything-you-need-to-know-about-fortnite-x-john-wick-wicks-bounty-ltm-challenges-rewards/",
+    "create_date": "16 mayo 2019"
+    },
+    {
+    "id" :35,
+    "title": "FORTNITE CHEAT SHEET MAP FOR SEASON 9, WEEK 2 CHALLENGES",
+    "body": "Struggling to complete the Fortnite Season 9, Week 2 challenges? Here's a week 2 cheat sheet map to help you complete the challenges as...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Season-9-Week-2-Challenges-Cheat-Sheet-Map.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-cheat-sheet-map-for-season-9-week-2-challenges/",
+    "create_date": "16 mayo 2019"
+    },
+    {
+    "id" :34,
+    "title": "FORTNITE FORTBYTE 17 LOCATION – FOUND INSIDE A WOODEN FISH BUILDING...",
+    "body": "Fortbyte 17 - Found inside a wooden fish building has been unlocked and is available to collect. Epic Games have released another Fortbyte challenge as...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Fortbyte-17-Found-within-a-wooden-fish-building.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-17-location-found-inside-a-wooden-fish-building-collect-guide/",
+    "create_date": "16 mayo 2019"
+    },
+    {
+    "id" :33,
+    "title": "FORTNITE X JOHN WICK COLLABORATION – WICK’S BOUNTY LTM LIVE &...",
+    "body": "The Fortnite x John Wick collaboration is now underway as the Wick's Bounty LTM and challenges are now live. Data-miners had leaked the challenges that...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-x-John-Wick-Collaboration-Wicks-Bounty-LTM-Live.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-x-john-wick-collaboration-wicks-bounty-ltm-live-challenges/",
+    "create_date": "16 mayo 2019"
+    },
+    {
+    "id" :32,
+    "title": "FORTNITE FORTBYTE 81 LOCATION – ACCESSIBLE IN THE DAYTIME NEAR A...",
+    "body": "Fortbyte 81 - Accessible in the daytime near a mountain top cactus wedge has now been unlocked is available to complete. Here's a location...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Fortbyte-81-Accessible-in-the-daytime-near-a-mountain-top-cactus-wedge.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-81-accessible-in-the-daytime-near-a-mountain-top-cactus-wedge-location-guide/",
+    "create_date": "15 mayo 2019"
+    },
+    {
+    "id" :31,
+    "title": "FORTNITE V9.01 PATCH NOTES – TACTICAL ASSAULT RIFLE, DRUM GUN NERF...",
+    "body": "The Fortnite v9.01 patch update will go live soon on PC, PlayStation 4, Xbox One, Nintendo Switch and mobile. Here are the patch notes. Epic...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Tactical-Assault-Rifle.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-v9-01-patch-notes-tactical-assault-rifle-and-bug-fixes/",
+    "create_date": "15 mayo 2019"
+    },
+
+    {
+    "id" :30,
+    "title": "FORTNITE SEASON 9 FORTBYTE 82 LOCATION – ACCESSIBLE BY SOLVING THE...",
+    "body": "Fortbyte 82 - Accessible by solving the pressure plate puzzle NW of the Block Guide has now been unlocked is available to complete. Here's...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortbyte-82-Location-Accessible-by-solving-the-pressure-plate-puzzle-NW-of-the-Block-Guide.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-season-9-fortbyte-82-location-accessible-by-solving-the-pressure-plate-puzzle-nw-of-the-block-guide/",
+    "create_date": "14 mayo 2019"
+    },
+    {
+    "id" :29,
+    "title": "FORTNITE FORTBYTE 55 LOCATION – FOUND WITHIN HAUNTED HILLS LOCATION GUIDE",
+    "body": "A brand new Fortnite Season 9 Fortbyte challenge has unlocked, Fortbyte 55 - Found Within Haunted Hills Epic Games are provided Fortnite players with a...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/FORTBYTE-55-%E2%80%93-Found-within-Haunted-Hills-Map-Location-guide.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-55-location-found-within-haunted-hills-location-guide/",
+    "create_date": "13 mayo 2019"
+    },        
+    {
+    "id" :28,
+    "title": "FORTNITE SEASON 9 FORTBYTE 13 – FOUND AT A HIDDEN LOCATION...",
+    "body": "Here's the location as to where to find Fortbyte 13 - Found at a hidden location within loading screen #2. Fortbyte challenges are an additional...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortbyte-13-found-at-a-hidden-location-within-loading-screen-2-location.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-season-9-fortbyte-13-found-at-a-hidden-location-within-loading-screen-2-location-guide/",
+    "create_date": "12 mayo 2019"
+    },
+    {
+    "id" :27,
+    "title": "FORTNITE SEASON 9 FORTBYTE 92 – ACCESSIBLE BY USING ROCK LOVE...",
+    "body": "A new Fortnite Season 9 Fortbyte challenge has unlocked, Fortbyte 92 - Accessible by using a Rock Love Spray near a lavafall. Epic Games are...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Accessible-by-using-Rock-Love-Spray-near-a-lavalfall-map-location-guide.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-season-9-fortbyte-92-accessible-by-using-rock-love-spray-near-a-lavafall-map-locations-guide/",
+    "create_date": "12 mayo 2019"
+    },
+    {
     "id" :26,
     "title": "LEAKED FORTNITE ITEM SHOP GEMINI SKIN CHALLENGES HAVE BEEN UPDATED",
     "body": "The Gemini Fortnite skin was added in the files at the end of Season 8, but has not been available for purchase in the...",
