@@ -53,7 +53,7 @@
       {% for articulo in articulos[0:4] %}
       <div class="card card-noticias card-noticias-home my-5">
 
-          <a href="{{ articulo.source_link }}"><img src="{{ articulo.image}}" class="card-img" alt="fortnite image"></a>
+          <a href="{{ articulo.source_link }}" target="_blank"><img src="{{ articulo.image}}" class="card-img" alt="fortnite image"></a>
 
           <div class="card-body card-body-noticias">
             <h5 class="card-title card-title-noticias">{{ articulo.title }}</h5>
@@ -63,7 +63,7 @@
               <li class="list-inline-item"><small class="text-muted">{{ articulo.author }}</small></li>
               <li class="list-inline-item"><small class="text-muted">{{ articulo.create_date }}</small></li>
             </ul>
-            <a href="{{ articulo.source_link }}" class="btn card-noticias-leermas_btn ">leer más</a>
+            <a href="{{ articulo.source_link }}" target="_blank" class="btn card-noticias-leermas_btn ">leer más</a>
           </div>
           
       </div>
