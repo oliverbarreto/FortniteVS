@@ -26,13 +26,18 @@
             {% for item in items_row %}
               {% if item.name %}
                 <div class="card card-tienda-hoy-featured-item mx-2 my-2 text-center" style="width: 15rem;
-                {% if item.rarity == 'Sturdy' %} background: radial-gradient(ellipse at center 55%, #49acf2,#143977);border: 2px solid #37d1ff;
-                {% elif item.rarity == 'Fine' %} background: radial-gradient(ellipse at center 55%, #e38347,#78371d);border: 2px solid #e98d4b;
-                {% elif item.rarity == 'Handmade' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117);border: 2px solid #87e339;
-                {% elif item.rarity == 'Quality' %} background: radial-gradient(ellipse at center 55%, #b15be2,#4b2483);border: 2px solid #e95eff;
-                {% elif item.rarity == 'Uncommon' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117); border: 2px solid #87e339;
-                {% else %} background: radial-gradient(ellipse at center 55%, #680508,#d51a18); border: 2px solid #ff9f37;
-                {% endif %}">
+                  {% if item.rarity == 'Sturdy' %} background: radial-gradient(ellipse at center 55%, #49acf2,#143977);border: 2px solid #37d1ff;    
+                  {% elif item.rarity == 'Rare' %} background: radial-gradient(ellipse at center 55%, #49acf2,#143977);border: 2px solid #37d1ff;    
+                  {% elif item.rarity == 'Handmade' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117);border: 2px solid #87e339;   
+                  {% elif item.rarity == 'Quality' %} background: radial-gradient(ellipse at center 55%, #b15be2,#4b2483);border: 2px solid #e95eff;      
+                  {% elif item.rarity == 'Epic' %} background: radial-gradient(ellipse at center 55%, #b15be2,#4b2483);border: 2px solid #e95eff;       
+                  {% elif item.rarity == 'Uncommon' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117); border: 2px solid #87e339;  
+                  {% elif item.rarity == 'Fine' %} background: radial-gradient(ellipse at center 55%, #e38347,#78371d);border: 2px solid #e98d4b;      
+                  {% elif item.rarity == 'Legendary' %} background: radial-gradient(ellipse at center 55%, #e38347,#78371d);border: 2px solid #e98d4b;       
+                  {% else %} background: radial-gradient(ellipse at center 55%, #680508,#d51a18); border: 2px solid #ff9f37;               
+                  {% endif %}">
+
+
                   <img src="{{ item.imageUrl }}" class="card-img" alt="fortnite image">
                   <div class="card-body card-tienda-hoy-body">
                     <!-- <p class="card-title"><strong>{{ item.name }}</strong></p>  -->

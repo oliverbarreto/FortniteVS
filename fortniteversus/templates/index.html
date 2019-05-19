@@ -50,7 +50,7 @@
         <h1 class="header-tienda">Noticias</h1>  
       </div>
       
-      {% for articulo in articulos[0:3] %}
+      {% for articulo in articulos[0:4] %}
       <div class="card card-noticias card-noticias-home my-5">
 
           <a href="{{ articulo.source_link }}"><img src="{{ articulo.image}}" class="card-img" alt="fortnite image"></a>
@@ -89,7 +89,8 @@
             {% for item in items_row %}
               {% if item.name %}
 
-                <div class="card card-tienda-hoy-featured-miniitem mx-2 my-1 text-center" style="{% if item.rarity == 'Sturdy' %} background: radial-gradient(ellipse at center 55%, #49acf2,#143977);border: 2px solid #37d1ff;
+                <div class="card card-tienda-hoy-featured-miniitem mx-2 my-1 text-center" style="
+                {% if item.rarity == 'Sturdy' %} background: radial-gradient(ellipse at center 55%, #49acf2,#143977);border: 2px solid #37d1ff;
                 {% elif item.rarity == 'Fine' %} background: radial-gradient(ellipse at center 55%, #e38347,#78371d);border: 2px solid #e98d4b;
                 {% elif item.rarity == 'Handmade' %} background: radial-gradient(ellipse at center 55%, #60aa3a,#175117);border: 2px solid #87e339;
                 {% elif item.rarity == 'Quality' %} background: radial-gradient(ellipse at center 55%, #b15be2,#4b2483);border: 2px solid #e95eff;
@@ -126,7 +127,14 @@
       </div>
 
 
-      <div class="flex-row">
+      <div class="flex-row mb-5">
+          <div class="col-12 d-flex justify-content-center align-items-stretch text-center py-1">
+            <!-- <p class="lead my-5"><a href="https://www.youtube.com/channel/UCu2pLbxy3QNbC-kcz7crV2g">TheGrefg</a></p> -->
+            <br>
+            <iframe src="https://www.youtube.com/embed/pO3SaExLDWY" allowfullscreen="" height="100%" frameborder="0"></iframe>
+          </div>
+          <br>
+          <br>
           <div class="col-12 d-flex justify-content-center align-items-stretch text-center py-1">
             <!-- <p class="lead my-5"><a href="https://www.youtube.com/channel/UCmAtyrOscBuwgiCsws8nBSw">Hugotekrac</a></p> -->
             <br>
@@ -144,7 +152,7 @@
           <div class="col-12 d-flex justify-content-center align-items-stretch text-center py-1">
             <!-- <p class="lead my-5"><a href="https://www.youtube.com/channel/UCu2pLbxy3QNbC-kcz7crV2g">TheGrefg</a></p> -->
             <br>
-            <iframe src="https://www.youtube.com/embed/JfpTQL6OHhg" allowfullscreen="" height="" ="100%" frameborder="0"></iframe>
+            <iframe src="https://www.youtube.com/embed/JfpTQL6OHhg" allowfullscreen="" height="100%" frameborder="0"></iframe>
           </div>
       </div>
 
