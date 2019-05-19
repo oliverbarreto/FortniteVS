@@ -5,7 +5,6 @@ from fortniteversus.models import StoreItem, dailyItems, weeklyItems, NewsItems
 from fortniteversus import db
 import requests
 import os
-import json
 from datetime import datetime,timedelta
 
 
@@ -278,7 +277,7 @@ def updatetienda():
 @app.route('/contacto')
 def contacto():
   return  render_template('contacto.html')
-
+  
 @app.route('/privacidad')
 def politicadeprivacidad():
   return  render_template('politica_privacidad.html')
@@ -322,6 +321,23 @@ def sitemap():
       return response
     except Exception as e:
         return(str(e))
+ 
+
+
+## ----------------------------------------------------------------------------
+## Server Errors 
+## ----------------------------------------------------------------------------
+
+@app.errorhandler(404) 
+def error404(error):
+  return render_template('404.html', error=404), 404
+
+@app.errorhandler(500) 
+def error500(error):
+  return render_template('500.html', error=500), 500
+
+
+
 
 
 

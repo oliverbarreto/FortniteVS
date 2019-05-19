@@ -1,0 +1,10 @@
+{% extends 'baseerrorlayout.html' %}
+
+
+{% block content %}
+
+  <h1 class="header-error404 text-center mt-md-2">Esta no es la llama que buscas...</h1>
+  <h1 class="header-error404-display1" id="error-value">404</h1>
+  <a href="{{ url_for('index') }}" class="btn btn-primary button-error404 mt-2">sigue buscando por la isla de FortniteVersus ... 😎💪🕹</a>
+
+{% endblock %}

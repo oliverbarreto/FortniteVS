@@ -496,6 +496,57 @@ body, wrapper {
 }
 
 
+
+/* -------------------------------------------------------- */ 
+/* Error 404                                                */
+/* -------------------------------------------------------- */ 
+.section-error404 {
+  background-image: url('/static/img/404_fornite_llama.jpg'); 
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 56px)
+}
+
+.header-error404 {
+  color: #fff;
+  font-size: 3rem;
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.038em;
+  vertical-align: baseline;
+  background-color: transparent;
+}
+
+.header-error404-display1 {
+  font-size: 6rem;
+}
+
+.button-error404 { /* Yellow Fortnite Custom Button */
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #f0ed63;
+  color: black;
+  box-shadow: 3px 3px 6px black;
+  padding: 30px;
+  border: none;
+  transition: 500ms background-color ease-in, 500ms color ease-in;
+  max-width:50%;
+}
+
+.button-error404:hover {
+  background-color: #C2BF50;
+}
+
+.full-cover-bg {
+  background-color: #111;
+}
+
+
+
 /* -------------------------------------------------------- */ 
 /* -------------------------------------------------------- */ 
 /* Media Queries*/
@@ -546,6 +597,16 @@ body, wrapper {
   .header-buscador {
     font-size: 5rem; 
   }
+
+  .header-error404-display1 {
+    font-size: 340px;
+  }
+  
+  .header-error404 {
+    font-size: 4rem;
+  }
+
+
 }
 
 /* Large Screens */

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- The Site Main Title and Tagline -->
+    <title>Voy a Tener Suerte! | Fortnite Versus - get to know your friends and enemies 😎💪🕹</title>
+
+    <!-- Imports: JS & CSS -->
+    {% include 'includes/_imports.html' %}
+
+    <!-- Google AdSense Block -->
+    {% include 'includes/_googleadsense.html' %}
+  background-image: url('/static/img/404_fornite_llama.jpg'); 
+
+
+  </head>
+  
+  <body class="d-flex flex-column h-100 full-cover-bg">
+      <header>
+        <!-- Navbar Container Block -->
+        {% include 'includes/_navbar.html' %}
+      </header>
+      
+      <!-- Main Bootstrap Container -->
+      <div class="section-error404 text-center" style="background-image: 
+      {% if error == 404 %}
+          url('/static/img/404_fornite_llama.jpg');
+      {% elif  error == 500 %}
+          url('/static/img/500_fornite_llama.jpg');
+      {% endif %} ">
+
+        <div class="jumbotron header-error404">
+          <div class="container">
+          
+            <!-- child block -->
+            {% block content %}{% endblock %} 
+          
+          </div>
+        </div>        
+      </div>
+
+      
+      <!-- Footer Container Block -->
+      <footer class="footer mt-auto py-3 bg-dark text-light">
+
+      <!-- <footer class="footer fixed-bottom"  -->
+
+          <!-- child block -->
+          {% include 'includes/_footer.html' %}
+      </footer>
+
+      <!-- Cookie-Alert -->
+      {% include 'includes/_cookiealert.html' %}
+      
+
+    <script src="/static/js/bootstrap.min.js"></script>
+
+
+  
+  </body>
+  
+  <!-- Google Analytics Code Block -->
+  {% include 'includes/_googleanalytics.html' %}
+
+  <!-- Google AdSense Code Block -->
+  {% include 'includes/_googleadsense.html' %}
+
+
+</html>
