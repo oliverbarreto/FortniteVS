@@ -152,9 +152,6 @@ body, wrapper {
   border-style: solid;
 }
 
-.section-versus-stats {
-
-}
 
 .section-players-stats {
   color: #111;
@@ -359,7 +356,7 @@ body, wrapper {
 .card-tienda-hoy-featured-miniitem {
     min-width: 75px;
     min-height: 75px;
-    width: 50%
+    width: 50%;
     height: 50%;
     margin: 0px 10px 0px 10px;
 }
@@ -562,7 +559,7 @@ body, wrapper {
   .card-tienda-hoy-featured-item, .card-tienda-hoy-daily-item {
     min-width: 200px;
     min-height: 200px;
-    width: 50%
+    width: 50%;
     height: 50%;
     margin: 0px 10px 0px 10px;
   }

@@ -1,5 +1,32 @@
 [
     {
+    "id" :41,
+    "title": "FORTNITE FORTBYTE #77 LOCATION – FOUND WITHIN A TRACK SIDE TACO...",
+    "body": "Here's the location of where to collect the new Fortbyte, Fortbyte #77 - Found within a track side taco shop.It's that time of day...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/found-within-a-track-side-taco-shop.png",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-77-location-found-within-a-track-side-taco-shop-locations-guide-bz3m43bm9n47/",
+    "create_date": "25 mayo 2019"
+    },
+        {
+    "id" :40,
+    "title": "FORTNITE FORTBYTE #41 LOCATION – ACCESSIBLE BY USING TOMATOHEAD EMOTICON INSIDE...",
+    "body": "A new Fortbyte challenge has been unlocked, Fortbyte #41 Location - Accessible by using Tomatohead Emoticon inside the DurrrBurger restaurant. Here's the location of...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortbyte-41-Location-Accessible-by-using-Tomatohead-Emoticon-inside-the-DurrrBurger-restaurant-ingame.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-41-location-accessible-by-using-tomatohead-emoticon-inside-the-durrrburger-restaurant-n95m6tc87sqr3thn/",
+    "create_date": "24 mayo 2019"
+    },
+        {
+    "id" :39,
+    "title": "FORTNITE CHEAT SHEET MAP FOR SEASON 9, WEEK 3 CHALLENGES",
+    "body": "FA new set of challenges have been released for Fortnite Season 9, Week 3. If you're struggling to complete the challenges, this cheat sheet...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Season-9-Week-3-Challenges-Cheat-Sheet-Map.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-cheat-sheet-map-for-season-9-week-3-challenges/",
+    "create_date": "23 mayo 2019"
+    },
+    {
     "id" :38,
     "title": "FORTNITE FORTBYTE 08 (8) LOCATION – FOUND WITHIN JUNK JUNCTION LOCATION...",
     "body": "Fortbytes are a new set of challenges introduced in Fortnite Season 9. A new challenge is unlocked each day, and a new challenge is...",

@@ -141,6 +141,27 @@ def getPlayerLifeTimeStats(name, platform):
 
   return lifeTimeStatsDataForPlayer
 
+def updatetiendadehoy():
+  ## Get current items from API 
+  URL = 'https://api.fortnitetracker.com/v1/store'
+  response = requests.get(URL, headers=headers)
+  response_json = response.json()
+    
+  for item in response_json:
+    manifest_id = int(item['manifestId'])
+    today = datetime.now().strftime("%Y-%m-%d")
+    
+    # Si no existe, creamos el registro del item
+    # o... Si existe, pero es de otra fecha, creamos el registro del item
+    count = StoreItem.query.filter_by(manifest_id=manifest_id).count()
+    count_day = StoreItem.query.filter_by(date=today, manifest_id=manifest_id).count()
+    if count == 0 or count_day == 0:
+      store_item = StoreItem(manifest_id=manifest_id, name= item['name'], rarity=item['rarity'], image_url = item['imageUrl'], store_category=item['storeCategory'], vbucks=item['vBucks'])
+      db.session.add(store_item)
+      
+      print("Committing to DB ...")
+      db.session.commit()
+
 
 ###############################################################################
 ## ----------------------------------------------------------------------------
@@ -243,26 +264,17 @@ def noticias():
 def articulostienda():
   return render_template('tienda.html', daily_items=dailyItems(), weekly_items=weeklyItems())
 
-def updatetiendadehoy():
-  ## Get current items from API 
-  URL = 'https://api.fortnitetracker.com/v1/store'
-  response = requests.get(URL, headers=headers)
-  response_json = response.json()
-    
-  for item in response_json:
-    manifest_id = int(item['manifestId'])
-    today = datetime.now().strftime("%Y-%m-%d")
-    
-    # Si no existe, creamos el registro del item
-    # o... Si existe, pero es de otra fecha, creamos el registro del item
-    count = StoreItem.query.filter_by(manifest_id=manifest_id).count()
-    count_day = StoreItem.query.filter_by(date=today, manifest_id=manifest_id).count()
-    if count == 0 or count_day == 0:
-      store_item = StoreItem(manifest_id=manifest_id, name= item['name'], rarity=item['rarity'], image_url = item['imageUrl'], store_category=item['storeCategory'], vbucks=item['vBucks'])
-      db.session.add(store_item)
-      
-      print("Committing to DB ...")
-      db.session.commit()
+@app.route('/articulo/<int:id>')
+def articulotienda(id):
+  item = {
+    "manifestId": 6494, 
+    "name": "Battle Pass Tiers", 
+    "rarity": "Quality", 
+    "imageUrl": "https://cdn.thetrackernetwork.com/cdn/fortnite/E83111645_large.png", 
+    "storeCategory": "BRDailyStorefront", 
+    "vBucks": 1500
+  }
+  return render_template('items_tienda.html', item=item)
 
 @app.route('/update/updatetienda')
 def updatetienda():
