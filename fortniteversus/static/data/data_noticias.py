@@ -1,50 +1,5 @@
 [
     {
-    "id" :68,
-    "title": "",
-    "body": "",
-    "author": "@fortniteinsider",
-    "image": "",
-    "source_link": "",
-    "create_date": "6 junio 2019"
-    },
-    {
-    "id" :67,
-    "title": "",
-    "body": "",
-    "author": "@fortniteinsider",
-    "image": "",
-    "source_link": "",
-    "create_date": "6 junio 2019"
-    },
-    {
-    "id" :66,
-    "title": "",
-    "body": "",
-    "author": "@fortniteinsider",
-    "image": "",
-    "source_link": "",
-    "create_date": "6 junio 2019"
-    },
-    {
-    "id" :65,
-    "title": "",
-    "body": "",
-    "author": "@fortniteinsider",
-    "image": "",
-    "source_link": "",
-    "create_date": "6 junio 2019"
-    },
-    {
-    "id" :64,
-    "title": "",
-    "body": "",
-    "author": "@fortniteinsider",
-    "image": "",
-    "source_link": "",
-    "create_date": "6 junio 2019"
-    },
-    {
     "id" :63,
     "title": "FORTNITE FORTBYTE 14 LOCATION – FOUND WITHIN A RV PARK",
     "body": "Today's new Fortbyte is Fortbyte Fortbyte 14 - Found within a RV Park. Here's the location of the Fortbyte.Fortbyte challenges are unlocked each day,...",
