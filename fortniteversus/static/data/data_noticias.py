@@ -1,5 +1,249 @@
 [
     {
+    "id" :68,
+    "title": "",
+    "body": "",
+    "author": "@fortniteinsider",
+    "image": "",
+    "source_link": "",
+    "create_date": "6 junio 2019"
+    },
+    {
+    "id" :67,
+    "title": "",
+    "body": "",
+    "author": "@fortniteinsider",
+    "image": "",
+    "source_link": "",
+    "create_date": "6 junio 2019"
+    },
+    {
+    "id" :66,
+    "title": "",
+    "body": "",
+    "author": "@fortniteinsider",
+    "image": "",
+    "source_link": "",
+    "create_date": "6 junio 2019"
+    },
+    {
+    "id" :65,
+    "title": "",
+    "body": "",
+    "author": "@fortniteinsider",
+    "image": "",
+    "source_link": "",
+    "create_date": "6 junio 2019"
+    },
+    {
+    "id" :64,
+    "title": "",
+    "body": "",
+    "author": "@fortniteinsider",
+    "image": "",
+    "source_link": "",
+    "create_date": "6 junio 2019"
+    },
+    {
+    "id" :63,
+    "title": "FORTNITE FORTBYTE 14 LOCATION – FOUND WITHIN A RV PARK",
+    "body": "Today's new Fortbyte is Fortbyte Fortbyte 14 - Found within a RV Park. Here's the location of the Fortbyte.Fortbyte challenges are unlocked each day,...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-Fortbyte-within-an-RV-Park.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-14-location-found-within-a-rv-park/",
+    "create_date": "15 junio 2019"
+    },
+    {
+    "id" :62,
+    "title": "NEW FORTNITE FORTBYTE 49 LOCATION – FOUND IN TROG’S ICE CAVE",
+    "body": "Here's the location where players can find today's new Fortbyte, Fortbyte 49 - Found in Trog's Ice Cave.There's a few Fortbyte challenges left in...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Trogs-Ice-Cave.jpg",
+    "source_link": "https://fortniteinsider.com/new-fortnite-fortbyte-49-location-found-in-trogs-ice-cave/",
+    "create_date": "14 junio 2019"
+    },
+    {
+    "id" :61,
+    "title": "FORTNITE CHEAT SHEET MAP FOR SEASON 9, WEEK 6 CHALLENGES LOCATIONS",
+    "body": "The Fortnite Season 9, Week 6 challenges have been unlocked and are available to complete. Here's a cheat sheet map to help you complete...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-Season-9-Week-6-Cheat-Sheet-Map-Challenge-Locations.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-cheat-sheet-map-for-season-9-week-6-challenges-locations/",
+    "create_date": "13 junio 2019"
+    },
+    {
+    "id" :60,
+    "source_link": "https://fortniteinsider.com/new-fortnite-fortbyte-89-accessible-by-flying-the-scarlet-strike-glider-through-rings-east-of-snobby-shores/",
+    "title": "",
+    "body": "Today's new Fortbyte challenge is Fortbyte 89 - Accessible by flying the Scarlet Strike Glider through the rings east of Snobby Shores.  Here's the...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortbyte-89.jpg",
+    "source_link": "https://fortniteinsider.com/new-fortnite-fortbyte-89-accessible-by-flying-the-scarlet-strike-glider-through-rings-east-of-snobby-shores/",
+    "create_date": "13 junio 2019"
+    },
+    {
+    "id" :59,
+    "title": "ALL FORTNITE BATTLE ROYALE MAP CHANGES IN THE V9.21 UPDATE –...",
+    "body": "Here are all of the Fortnite map changes made in the v9.21 update.Epic Games tend to make map changes for the Fortnite Battle Royale...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-v9.21-Map-Changes-Last-House-in-Snobby-Shores-Destroyed-min.png",
+    "source_link": "https://fortniteinsider.com/all-fortnite-battle-royale-map-changes-in-the-v9-21-update-snobby-shores-house-destroyed-more/",
+    "create_date": "12 junio 2019"
+    },
+    {
+    "id" :58,
+    "title": "NEW FORTNITE FORTBYTE 19 LOCATION – ACCESSIBLE WITH THE VEGA OUTFIT...",
+    "body": "Here's the location of today's Fortbyte, Fortbyte 19 Accessible with the vega outfit inside a spaceship buildingAs with every day since the season began",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortbyte-19-in-game.jpg",
+    "source_link": "https://fortniteinsider.com/new-fortnite-fortbyte-19-location-accessible-with-the-vega-outfit-inside-a-spaceship-building/",
+    "create_date": "12 junio 2019"
+    },
+    {
+    "id" :57,
+    "title": "FORTNITE FORTBYTE 78 LOCATION – FOUND WITHIN A RANGER TOWER OVERLOOKING...",
+    "body": "Here's the location where you can find today's Fortbyte, Fortbyte 78 - Found within a Ranger tower overlooking a drained lake. We're almost into week...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortbyte-78-in-game.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-78-location-found-within-a-ranger-tower-overlooking-a-drained-lake/",
+    "create_date": "11 junio 2019"
+    },
+    {
+    "id" :56,
+    "title": "FORTNITE FORTBYTE 95 LOCATION – FOUND AT A SOLAR PANEL ARRAY...",
+    "body": "Here's the location of where you can find today's Fortnite Fortbyte, Fortbyte 95 location - Found at a Solar Panel Array in the Jungle. Epic...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortbyte-95-FOUND-AT-A-SOLAR-PANEL-ARRAY-IN-THE-JUNGLE-Fortnite-Location.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-95-location-found-at-a-solar-panel-array-in-the-jungle/",
+    "create_date": "10 junio 2019"
+    },
+    {
+    "id" :55,
+    "title": "FORTNITE FORTBYTE 65 LOCATION – FOUND IN A BASEMENT BUDGET MOVIE...",
+    "body": "Today's new Fortbyte is Fortbyte Fortbyte 65 - Found in a basement budget movie set. Here's the location of where to collect the Fortbyte. In...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortbyte-65-budget-movie-set-basement.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-65-location-found-in-a-basement-budget-movie-set/",
+    "create_date": "9 junio 2019"
+    },
+    {
+    "id" :54,
+    "title": "FORTBYTE #70 – ACCESSIBLE BY SKYDIVING THROUGH THE RINGS ABOVE LAZY LAGOON WITH THE VIBRANT CONTRAILS",
+    "body": "Here’s where you can unlock Fortnite Fortbyte #70 – Accessible by skydiving through the rings above Lazy Lagoon with the Vibrant Contrails",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortbyte-70-location.jpg",
+    "source_link": "https://fortniteinsider.com/fortbyte-70-accessible-by-skydiving-through-the-rings-above-lazy-lagoon-with-the-vibrant-contrails/",
+    "create_date": "10 junio 2019"
+    },
+    {
+    "id" :53,
+    "title": "FORTNITE CHEAT SHEET MAP FOR SEASON 9, WEEK 5 CHALLENGES",
+    "body": "Here’s a cheat sheet map to help you complete the Fortnite Season 9, Week 5 challenges faster.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-Season-9-Week-5-Cheat-Sheet-Map-Challenge-Locations.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-cheat-sheet-map-for-season-9-week-5-challenges/",
+    "create_date": "6 junio 2019"
+    },
+    {
+    "id" :52,
+    "title": "FORTNITE FORTBYTE 61 LOCATION – ACCESSIBLE BY USING SUNBIRD SPRAY ON A FROZEN WATERFALL",
+    "body": "Here’s the location of where to find today’s Fortbyte – Fortbyte 61 – Accessible by using Sunbird Spray on a frozen waterfall",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortbyte-61-Location-Accessible-by-using-Sunbird-Spray-on-a-frozen-waterfall.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-61-location-accessible-by-using-sunbird-spray-on-a-frozen-waterfall/",
+    "create_date": "6 junio 2019"
+    },
+    {
+    "id" :51,
+    "title": "ALL FORTNITE BATTLE ROYALE MAP CHANGES IN THE V9.20 UPDATE – POLAR PEAK ICEBERG MONSTER ESCAPES",
+    "body": "Here are all of the map changes that have been made in the v9.20 Fortnite update.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-v9.20-Map-Changes-Monster-Footprints-min.png",
+    "source_link": "https://fortniteinsider.com/all-fortnite-battle-royale-map-changes-in-the-v9-20-update-zeqkqjp1s9/",
+    "create_date": "6 junio 2019"
+    },
+    {
+    "id" :50,
+    "title": "FORTNITE FORTBYTE #69 LOCATION – FOUND INSIDE A STONE PIG BUILDING GUIDE",
+    "body": "Here’s the location of today’s new Fortbyte, Fortbyte #69 – Found inside a stone pig building.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/02/Fortnite-Season-8-Map-Changes-Pig-Structure.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-69-location-found-inside-a-stone-pig-building-guide/",
+    "create_date": "5 junio 2019"
+    },
+    {
+    "id" :49,
+    "title": "FORTNITE FORTBYTE #76 – FOUND BEHIND A HISTORICAL DIORAMA IN AN INSURANCE BUILDING LOCATION GUIDE",
+    "body": "Here's a Fortnite Cheat Sheet for all of the Fortbyte locations released before the 2nd June. This cheat sheet includes the locations of Fortbytes.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/FOUND-BEHIND-A-HISTORICAL-DIORAMA-IN-AN-INSURANCE-BUILDING-Fortnite-Fortbyte-76.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-76-found-behind-a-historical-diorama-in-an-insurance-building-location-guide-pdc36d2qje9j/",
+    "create_date": "4 junio 2019"
+    },
+    {
+    "id" :48,
+    "title": "ALL FORTNITE FORTBYTE LOCATIONS – 16, 26, 31, 32, 41, 50, 74, 77, 74, 80, 88, 91",
+    "body": "Here's a Fortnite Cheat Sheet for all of the Fortbyte locations released before the 2nd June. This cheat sheet includes the locations of Fortbytes.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/All-Fortnite-Fortbyte-Locations-Fortbytes-16-26-31-32-41-50-74-77-79-80-88-91-e1559486195227.jpg",
+    "source_link": "https://fortniteinsider.com/all-fortnite-fortbyte-locations-16-26-31-32-41-50-74-77-74-80-88-91/",
+    "create_date": "2 junio 2019"
+    },
+    {
+    "id" :47,
+    "title": "ALL FORTNITE FORTBYTES LOCATIONS – 06, 07, 08, 13, 17, 22,...",
+    "body": "Here's a Fortnite Cheat sheet for all the Fortbyte locations released before 24th May. This cheat sheet includes the locations of Fortbytes 06, 07,...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/All-Fortnite-Fortbyte-locations-Fortbytes-06-07-08-13-17-22-24-36-47-55-64-72-81-82-92.jpg",
+    "source_link": "https://fortniteinsider.com/all-fortnite-fortbytes-locations-06-07-08-13-17-22-24-36-47-55-64-72-81-82-92/",
+    "create_date": "2 junio 2019"
+    },
+    {
+    "id" :46,
+    "title": "FORTNITE FORTBYTE #88 – FOUND SOMEWHERE WITHIN MAP LOCATION J3 LOCATIONS...",
+    "body": "Here's the location of where you can collect Fortbyte #91 - Found at a location hidden within loading screen #4, the latest Fortbyte to...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Season-9-Week-4-Leaked-Loading-Screen-1.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-88-found-somewhere-within-map-location-j3-locations-guide-k7gr48z7q3bp2v7h/",
+    "create_date": "2 junio 2019"
+    },
+    {
+    "id" :45,
+    "title": "FORTNITE FORTBYTE #88 – FOUND SOMEWHERE WITHIN MAP LOCATION J3 LOCATIONS...",
+    "body": "Fortnite Fortbyte #88 - Found somewhere within map location J3 is now available for players to collect. Here's the location of where to collect...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortbyte-88-Found-somewhere-within-map-location-J3.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-88-found-somewhere-within-map-location-j3-locations-guide-k7gr48z7q3bp2v7h/",
+    "create_date": "31 mayo 2019"
+    },
+    {
+    "id" :44,
+    "title": "FORTNITE CHEAT SHEET MAP FOR SEASON 9, WEEK 4 CHALLENGES",
+    "body": "The Fortnite Season 9, Week 4 challenges have been unlocked and are available to complete. Here's a cheat sheet if you're struggling to complete...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortnite-Season-9-Week-4-Challenges-Cheat-Sheet-Map.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-79-location-found-within-an-arcade-guide-g23s3f9jh3mk/",
+    "create_date": "30 mayo 2019"
+    },
+    {
+    "id" :43,
+    "title": "FORTNITE FORTBYTE #79 LOCATION – FOUND WITHIN AN ARCADE GUIDE...",
+    "body": "Fortnite Fortbyte #79 - Found within an arcade has now been unlocked. Here's the location of where to collect it. As today is Thursday, not...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortbyte-79-found-within-an-arcade-location.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-79-location-found-within-an-arcade-guide-g23s3f9jh3mk/",
+    "create_date": "30 mayo 2019"
+    },
+    {
+    "id" :42,
+    "title": "FORTNITE FORTBYTE #32 LOCATION – ACCESSIBLE BY WEARING KYO PET BACK BLING AT THE NORTHERN MOST POINT LOCATIONS GUIDE...",
+    "body": "A new Fortbyte challenge has been unlocked, Fortbyte #32 – Accessible by wearing Kyo Pet Back Bling at the northern most point. Here’s the location of where to collect it.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Fortbyte-32-Accessible-by-wearing-Kyo-Pet-Back-Bling-at-the-northern-most-point.png",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-32-location-accessible-by-wearing-kyo-pet-back-bling-at-the-northern-most-point-locations-guide-wd2hzgprer6b/",
+    "create_date": "26 mayo 2019"
+    },
+    {
     "id" :41,
     "title": "FORTNITE FORTBYTE #77 LOCATION – FOUND WITHIN A TRACK SIDE TACO...",
     "body": "Here's the location of where to collect the new Fortbyte, Fortbyte #77 - Found within a track side taco shop.It's that time of day...",
@@ -8,7 +252,7 @@
     "source_link": "https://fortniteinsider.com/fortnite-fortbyte-77-location-found-within-a-track-side-taco-shop-locations-guide-bz3m43bm9n47/",
     "create_date": "25 mayo 2019"
     },
-        {
+    {
     "id" :40,
     "title": "FORTNITE FORTBYTE #41 LOCATION – ACCESSIBLE BY USING TOMATOHEAD EMOTICON INSIDE...",
     "body": "A new Fortbyte challenge has been unlocked, Fortbyte #41 Location - Accessible by using Tomatohead Emoticon inside the DurrrBurger restaurant. Here's the location of...",
@@ -17,7 +261,7 @@
     "source_link": "https://fortniteinsider.com/fortnite-fortbyte-41-location-accessible-by-using-tomatohead-emoticon-inside-the-durrrburger-restaurant-n95m6tc87sqr3thn/",
     "create_date": "24 mayo 2019"
     },
-        {
+    {
     "id" :39,
     "title": "FORTNITE CHEAT SHEET MAP FOR SEASON 9, WEEK 3 CHALLENGES",
     "body": "FA new set of challenges have been released for Fortnite Season 9, Week 3. If you're struggling to complete the challenges, this cheat sheet...",
