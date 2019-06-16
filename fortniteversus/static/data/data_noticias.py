@@ -1,5 +1,32 @@
 [
     {
+    "id" :61,
+    "title": "FORTNITE CHEAT SHEET MAP FOR SEASON 9, WEEK 6 CHALLENGES LOCATIONS",
+    "body": "The Fortnite Season 9, Week 6 challenges have been unlocked and are available to complete. Here's a cheat sheet map to help you complete...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-Season-9-Week-6-Cheat-Sheet-Map-Challenge-Locations.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-cheat-sheet-map-for-season-9-week-6-challenges-locations/",
+    "create_date": "13 junio 2019"
+    },
+    {
+    "id" :48,
+    "title": "ALL FORTNITE FORTBYTE LOCATIONS – 16, 26, 31, 32, 41, 50, 74, 77, 74, 80, 88, 91",
+    "body": "Here's a Fortnite Cheat Sheet for all of the Fortbyte locations released before the 2nd June. This cheat sheet includes the locations of Fortbytes.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/All-Fortnite-Fortbyte-Locations-Fortbytes-16-26-31-32-41-50-74-77-79-80-88-91-e1559486195227.jpg",
+    "source_link": "https://fortniteinsider.com/all-fortnite-fortbyte-locations-16-26-31-32-41-50-74-77-74-80-88-91/",
+    "create_date": "2 junio 2019"
+    },
+    {
+    "id" :47,
+    "title": "ALL FORTNITE FORTBYTES LOCATIONS – 06, 07, 08, 13, 17, 22,...",
+    "body": "Here's a Fortnite Cheat sheet for all the Fortbyte locations released before 24th May. This cheat sheet includes the locations of Fortbytes 06, 07,...",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/All-Fortnite-Fortbyte-locations-Fortbytes-06-07-08-13-17-22-24-36-47-55-64-72-81-82-92.jpg",
+    "source_link": "https://fortniteinsider.com/all-fortnite-fortbytes-locations-06-07-08-13-17-22-24-36-47-55-64-72-81-82-92/",
+    "create_date": "2 junio 2019"
+    },
+   {
     "id" :63,
     "title": "FORTNITE FORTBYTE 14 LOCATION – FOUND WITHIN A RV PARK",
     "body": "Today's new Fortbyte is Fortbyte Fortbyte 14 - Found within a RV Park. Here's the location of the Fortbyte.Fortbyte challenges are unlocked each day,...",
@@ -18,18 +45,8 @@
     "create_date": "14 junio 2019"
     },
     {
-    "id" :61,
-    "title": "FORTNITE CHEAT SHEET MAP FOR SEASON 9, WEEK 6 CHALLENGES LOCATIONS",
-    "body": "The Fortnite Season 9, Week 6 challenges have been unlocked and are available to complete. Here's a cheat sheet map to help you complete...",
-    "author": "@fortniteinsider",
-    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-Season-9-Week-6-Cheat-Sheet-Map-Challenge-Locations.jpg",
-    "source_link": "https://fortniteinsider.com/fortnite-cheat-sheet-map-for-season-9-week-6-challenges-locations/",
-    "create_date": "13 junio 2019"
-    },
-    {
     "id" :60,
-    "source_link": "https://fortniteinsider.com/new-fortnite-fortbyte-89-accessible-by-flying-the-scarlet-strike-glider-through-rings-east-of-snobby-shores/",
-    "title": "",
+    "title": "NEW FORTNITE FORTBYTE 89 LOCATION – ACCESSIBLE BY FLYING THE SCARLET...",
     "body": "Today's new Fortbyte challenge is Fortbyte 89 - Accessible by flying the Scarlet Strike Glider through the rings east of Snobby Shores.  Here's the...",
     "author": "@fortniteinsider",
     "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortbyte-89.jpg",
@@ -134,24 +151,6 @@
     "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/FOUND-BEHIND-A-HISTORICAL-DIORAMA-IN-AN-INSURANCE-BUILDING-Fortnite-Fortbyte-76.jpg",
     "source_link": "https://fortniteinsider.com/fortnite-fortbyte-76-found-behind-a-historical-diorama-in-an-insurance-building-location-guide-pdc36d2qje9j/",
     "create_date": "4 junio 2019"
-    },
-    {
-    "id" :48,
-    "title": "ALL FORTNITE FORTBYTE LOCATIONS – 16, 26, 31, 32, 41, 50, 74, 77, 74, 80, 88, 91",
-    "body": "Here's a Fortnite Cheat Sheet for all of the Fortbyte locations released before the 2nd June. This cheat sheet includes the locations of Fortbytes.",
-    "author": "@fortniteinsider",
-    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/All-Fortnite-Fortbyte-Locations-Fortbytes-16-26-31-32-41-50-74-77-79-80-88-91-e1559486195227.jpg",
-    "source_link": "https://fortniteinsider.com/all-fortnite-fortbyte-locations-16-26-31-32-41-50-74-77-74-80-88-91/",
-    "create_date": "2 junio 2019"
-    },
-    {
-    "id" :47,
-    "title": "ALL FORTNITE FORTBYTES LOCATIONS – 06, 07, 08, 13, 17, 22,...",
-    "body": "Here's a Fortnite Cheat sheet for all the Fortbyte locations released before 24th May. This cheat sheet includes the locations of Fortbytes 06, 07,...",
-    "author": "@fortniteinsider",
-    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/All-Fortnite-Fortbyte-locations-Fortbytes-06-07-08-13-17-22-24-36-47-55-64-72-81-82-92.jpg",
-    "source_link": "https://fortniteinsider.com/all-fortnite-fortbytes-locations-06-07-08-13-17-22-24-36-47-55-64-72-81-82-92/",
-    "create_date": "2 junio 2019"
     },
     {
     "id" :46,
