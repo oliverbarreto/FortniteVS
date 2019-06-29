@@ -1,5 +1,95 @@
 [
     {
+    "id" :71,
+    "title": "FORTNITE 14 DAYS OF SUMMER DAY 4 CHALLENGE AND REWARD",
+    "body": "Day 4 of the Fortnite 14 days of Summer event will go live soon. Here’s the challenge and reward for today.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/14-Days-of-Summer-Fortnite-Event-Day-4-min.png",
+    "source_link": "https://fortniteinsider.com/fortnite-14-days-of-summer-day-4-challenge-and-reward/",
+    "create_date": "28 junio 2019"
+    },
+    {
+    "id" :70,
+    "title": "FORTNITE SEASON 9, WEEK 8 CHEAT SHEET CHALLENGES LOCATIONS GUIDE",
+    "body": "Here’s a Fortnite cheat sheet for the Season 9, Week 8 challenges that were released today.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-Season-9-Week-8-Cheat-Sheet-Challenges-Locations-Guide.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-season-9-week-8-cheat-sheet-challenges-locations-guide/",
+    "create_date": "27 junio 2019"
+    },
+    {
+    "id" :69,
+    "title": "‘FORTNITE’ FORTBYTE #100 LOCATION: FOUND ON THE HIGHEST FLOOR ON THE TALLEST BUILDING IN NEO TILTED",
+    "body": "Today’s Fortnite Fortbyte #100 Location: Found on the highest floor on the tallest building in Neo Tilted. Here’s the location where you can find it.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/05/Neo-Tilted.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-100-location-found-on-the-highest-floor-on-the-tallest-building-in-neo-tilted/",
+    "create_date": "27 junio 2019"
+    },
+    {
+    "id" :68,
+    "title": "EPIC GAMES UNVAULT THE UNCOMMON AND RARE PUMP SHOTGUN IN TODAY’S V9.30 FORTNITE CONTENT UPDATE #1",
+    "body": "Epic Games have decided to unvault the uncommon and rare pump shotgun in today’s v9.30 content update #1.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Pump-shotgun-Fortnite.jpg",
+    "source_link": "https://fortniteinsider.com/epic-games-unvault-the-uncommon-and-rare-pump-shotgun-in-todays-v9-30-fortnite-content-update-1/",
+    "create_date": "25 junio 2019"
+    },
+    {
+    "id" :67,
+    "title": "FORTNITE V9.30 CONTENT UPDATE MAP CHANGES – PRESSURE PLANT & STONE FAMILY & LEAKED FOOTAGE OF PLANT OPENED",
+    "body": "The Pressure Plant POI in Fortnite has changed quite drastically today before the Content Update took place. Here is what is looks like now and leaked footage of what it looks like when it is opened.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-v9.30-Pressure-Plant-Map-Changes-min.png",
+    "source_link": "https://fortniteinsider.com/fortnite-v9-30-content-update-map-changes-pressure-plant-stone-family-leaked-footage-of-plant-opened/",
+    "create_date": "25 junio 2019"
+    },
+    {
+    "id" :66,
+    "title": "14 DAYS OF SUMMER FORTNITE EVENT CONFIRMED – CHALLENGES, REWARDS, ITEM SHOP SKINS AND NEW LTMS",
+    "body": "Epic have officially announced the 14 Days of Summer Event, which includes weapons being unvaultes, new LTMs, daily challenges and rewards and new Item Shop skins.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-Leaked-Summer-Loading-Screen.jpg",
+    "source_link": "https://fortniteinsider.com/14-days-of-fortnite-event-confirmed-challenges-rewards-item-shop-skins-and-new-ltms/",
+    "create_date": "24 junio 2019"
+    },
+    {
+    "id" :65,
+    "title": "COMPLETED FORTNITE SEASON 9 FORTBYTE IMAGE LEAKED",
+    "body": "Here’s the full Fortnite Fortbyte image for Season 9, which was leaked by dataminers from the v9.30 files.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-Fortbytes.jpg",
+    "source_link": "https://fortniteinsider.com/completed-fortnite-season-9-fortbyte-image-leaked/",
+    "create_date": "23 junio 2019"
+    },
+    {
+    "id" :64,
+    "title": "FORTNITE CHEAT SHEET MAP FOR SEASON 9, WEEK 7 CHALLENGES",
+    "body": "The challenges for Fortnite Season 9, Week 7 have been unlocked and are available to complete. Here’s a cheat sheet map to help you complete the challenges as quickly as possible.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-Season-9-Week-7-Challenges-Cheat-Sheet-Map.jpg",
+    "source_link": "https://fortniteinsider.com/fortnite-cheat-sheet-map-for-season-9-week-7-challenges/",
+    "create_date": "20 junio 2019"
+    },
+    {
+    "id" :63,
+    "title": "FORTNITE FORTBYTE #12 LOCATION – ACCESSIBLE BY USING THE NANA NANA SPRAY INSIDE A MOLTEN TUNNEL",
+    "body": "Fortnite Fortbyte #12 – Accessible by using the Nana Nana Spray inside a molten tunnel has recently been unlocked and is available to collect. Here’s the location of the today’s new Fortbyte.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Molten-Tunnel.png",
+    "source_link": "https://fortniteinsider.com/fortnite-fortbyte-12-location-accessible-by-using-the-nana-nana-spray-inside-a-molten-tunnel/",
+    "create_date": "20 junio 2019"
+    },    
+    {
+    "id" :62,
+    "title": "ALL FORTNITE BATTLE ROYALE MAP CHANGES IN THE V9.30 UPDATE – LOOT LAKE DESTROYED & MORE",
+    "body": "Here are all of the map changes that have been made in the v9.30 Fortnite update.",
+    "author": "@fortniteinsider",
+    "image": "https://fortniteinsider.com/wp-content/uploads/2019/06/Fortnite-v9.30-Map-Changes-Loot-Lake-Destruction-min.png",
+    "source_link": "https://fortniteinsider.com/all-fortnite-battle-royale-map-changes-in-the-v9-30-update-loot-lake-destroyed-more/",
+    "create_date": "18 junio 2019"
+    },
+    {
     "id" :61,
     "title": "FORTNITE CHEAT SHEET MAP FOR SEASON 9, WEEK 6 CHALLENGES LOCATIONS",
     "body": "The Fortnite Season 9, Week 6 challenges have been unlocked and are available to complete. Here's a cheat sheet map to help you complete...",
